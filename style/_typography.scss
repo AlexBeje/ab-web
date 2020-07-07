@@ -1,0 +1,27 @@
+@import "./eight-point-grid-system";
+
+// Set font family.
+
+h1, h2, h3 {
+  font-family: 'Orbitron', sans-serif;
+  margin-bottom: 0;
+  margin-top: 0;
+}
+
+h1 {
+  font-size: $typo-3;
+}
+
+h2 {
+  font-size: $typo-2;
+}
+
+h3 {
+  font-size: $typo-1;
+}
+
+p {
+  font-family: 'Gruppo', cursive;
+  margin-bottom: 0;
+  margin-top: 0;
+}

@@ -1,0 +1,174 @@
+@import "../eight-point-grid-system";
+
+.main-page-bg {
+  background: $primary;
+}
+
+.main-page {
+  background-image: url(../../assets/portrait.png);
+  background-position: top -150px right -40px;
+  background-repeat: no-repeat;
+  color: $white;
+  height: 100vh;
+  filter: contrast(85%);
+}
+
+.nav__icon {
+  cursor: pointer;
+  height: $size-3;
+  margin: $size-3;
+  width: $size-3;
+  z-index: 200;
+  &:hover {
+    .nav__icon--burger {
+      background: $secondary;
+      &::after,
+      &::before {
+        background: $secondary;
+      }
+    }
+  }
+  &:hover {
+    .nav__icon--close {
+      background: $secondary;
+      &::after {
+        background: $secondary;
+      }
+    }
+  }
+}
+
+.nav__icon--burger {
+  background: $white;
+  height: 0.2em;
+  position: relative;
+  top: 14px;
+  transition: $transition;
+  width: $size-3;
+  &::before {
+    background: $white;
+    content: "";
+    height: 0.2em;
+    position: absolute;
+    top: 8px;
+    transition: $transition;
+    width: 2em;
+  }
+  &::after {
+    background: $white;
+    content: "";
+    height: 0.2em;
+    position: absolute;
+    top: -8px;
+    transition: $transition;
+    width: 2em;
+  }
+}
+
+.nav__icon--close {
+  background: $white;
+  display: none;
+  height: $size-3;
+  margin-left: 14px;
+  position: relative;
+  transform: rotate(135deg);
+  transition: $transition;
+  width: 0.2em;
+  &::after {
+    background: $white;
+    content: "";
+    height: 2em;
+    position: absolute;
+    transform: rotate(90deg);
+    transition: $transition;
+    width: 0.2em;
+  }
+}
+
+.nav__items {
+  align-items: center;
+  background: black;
+  display: none;
+  flex-flow: column;
+  height: 100%;
+  justify-content: center;
+  opacity: 0.9;
+  position: fixed;
+  width: 100%;
+  z-index: 100;
+}
+
+.nav__item {
+  margin-bottom: $size-2;
+  transition: $transition;
+  &:hover {
+    color: $secondary;
+    cursor: pointer;
+  }
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.profile__title {
+  margin: 0 auto;
+  padding: 0 $size-3 $size-2 $size-3;
+  width: 360px;
+}
+
+.profile__text {
+  padding: 0 $typo-3;
+  width: 230px;
+}
+
+.more {
+  bottom: 0;
+  left: calc(50% - 50px);
+  margin: 0 0 $size-3 0;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  &:hover {
+    cursor: pointer;
+    .more__icon {
+      color: $secondary;
+    }
+  }
+}
+
+.more__icon {
+  font-size: $typo-3;
+  transition: $transition;
+}
+
+// iPad side window
+@media (max-width: 400px) and (min-height: 880px) {
+  .main-page {
+    background-position: bottom 0 right -20px;
+  }
+  .profile__text {
+    text-align: center;
+    width: auto;
+  }
+}
+
+// Devices smaller than iPhone SE
+@media only screen and (max-height: 450px), screen and (max-width: 360px) {
+  .main-page {
+    background: $primary;
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+  }
+  .profile__title {
+    font-size: 25px;
+    width: auto;
+  }
+  .profile__text {
+    text-align: center;
+    width: auto;
+  }
+  .more {
+    position: relative;
+  }
+}

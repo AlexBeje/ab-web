@@ -1,12 +1,48 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>AB Portfolio</title>
-  <link rel="stylesheet" href="main.css">
-</head>
-<body>
-  <button name="" id="" class="btn btn-primary" href="#" role="button">Welcome!</button>
-</body>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AB Portfolio</title>
+    <link rel="stylesheet" href="main.css" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Orbitron&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap"
+      rel="stylesheet"
+    />
+    <script src="./script/menu.js" defer></script>
+  </head>
+  <body>
+    <div class="container-fluid">
+      <div class="row main-page-bg">
+        <div class="col main-page">
+          <nav class="nav d-flex justify-content-end">
+            <div class="nav__icon" onclick="openMenu()">
+              <div class="nav__icon--burger d-block"></div>
+              <div class="nav__icon--close"></div>
+            </div>
+            <div class="nav__items">
+              <h1 class="nav__item">PR0JECTS</h1>
+              <h1 class="nav__item">SK1LLS</h1>
+              <h1 class="nav__item">C0NT4CT</h1>
+            </div>
+          </nav>
+          <div class="profile">
+            <h1 class="profile__title text-center">4LEX4NDRU BEJEN4RU</h1>
+            <p class="profile__text">
+              My name is Alexandru Bejenaru and I am a web designer and
+              developer.
+            </p>
+          </div>
+          <div class="more">
+            <div class="more__icon text-center">⌄</div>
+            <h2 class="more__text text-center">PR0JECTS</h2>
+          </div>
+        </div>
+      </div>
+    </div>
+  </body>
 </html>
