@@ -1,0 +1,97 @@
+@import "../eight-point-grid-system";
+
+.main-page {
+  background: $primary;
+  color: white;
+  height: 100vh;
+  &::before {
+    background-image: url(../../assets/portrait.png);
+    background-position: right -40px top -150px;
+    background-repeat: no-repeat;
+    content: "";
+    filter: contrast(85%);
+    height: 100%;
+    left: 0;
+    position: absolute;
+    top: 0;
+    width: 100%;
+  }
+}
+
+.nav__icon--burger {
+  background-image: url(../../assets/menu.png);
+  background-repeat: no-repeat;
+  background-size: $size-3;
+  filter: invert(1);
+  height: $size-3;
+  margin: $size-3;
+  width: $size-3;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.nav__icon--close {
+  display: none;
+}
+
+.nav__items {
+  display: none;
+}
+
+button {
+  position: relative;
+}
+
+.profile__title {
+  margin: 0 auto;
+  padding: 0 $size-3 $size-2 $size-3;
+  position: relative;
+  width: 360px;
+}
+
+.profile__text {
+  padding: 0 $typo-3;
+  position: relative;
+  width: 230px;
+}
+
+.more {
+  bottom: 0;
+  left: calc(50% - 50px);
+  margin: 0 0 $size-3 0;
+  position: absolute;
+  text-align: center;
+  width: 100px;
+  &:hover {
+    cursor: pointer;
+  }
+}
+
+.more__icon {
+  font-size: $typo-3;
+}
+
+@media only screen and (min-height: 800px),
+  screen and (max-height: 450px),
+  screen and (max-width: 360px) {
+  .main-page {
+    display: flex;
+    flex-flow: column;
+    justify-content: space-between;
+    &::before {
+      background: $primary;
+    }
+  }
+  .profile__title {
+    font-size: 25px;
+    width: auto;
+  }
+  .profile__text {
+    text-align: center;
+    width: auto;
+  }
+  .more {
+    position: relative;
+  }
+}
