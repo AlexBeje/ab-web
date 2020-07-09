@@ -1,0 +1,110 @@
+@import "../eight-point-grid-system";
+
+.projects-page-bg {
+  background: linear-gradient(
+    90deg,
+    rgba(98, 229, 255, 1) 0%,
+    rgba(0, 179, 216, 1) 100%
+  );
+}
+
+.projects-page {
+  padding: $size-3;
+}
+
+.projects-page__title {
+  margin-bottom: $size-1;
+}
+
+.projects-page__text {
+  margin-bottom: $size-3;
+}
+
+.my-card {
+  color: $white;
+}
+
+.my-card__selection {
+  display: flex;
+  justify-content: space-between;
+}
+
+.my-card__first,
+.my-card__second,
+.my-card__third {
+  background: $secondary;
+  border-radius: 5px 5px 0 0;
+  cursor: pointer;
+  padding: $size-1;
+  text-align: center;
+  width: 31.5%;
+  &:hover {
+    color: $primary;
+  }
+  h2 {
+    transition: $transition;
+  }
+}
+
+.my-card--active {
+  background: #333333;
+  cursor: default;
+  &:hover {
+    background: #333333;
+    color: $white;
+  }
+}
+
+.my-card__body {
+  background: #333333;
+  display: flow-root;
+  padding: $size-3;
+}
+
+.my-card__title {
+  color: $primary;
+}
+
+.my-card__subtitle {
+  margin-bottom: $size-3;
+}
+
+.my-card__text {
+  margin-bottom: $size-3;
+}
+
+.my-card__button {
+  background: $primary;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  padding: $size-1 $size-2;
+  transition: $transition;
+  width: auto;
+  &:hover {
+    background: $white;
+    color: #333333;
+  }
+}
+
+.my-card__img {
+  background-position: center center;
+  border-radius: 0 0 5px 5px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 200px;
+}
+
+// Devices smaller than iPhone SE
+@include for-iphone-8 {
+  .projects-page {
+    padding: $size-3 $size-1 $size-1 $size-1;
+  }
+  .my-card__body {
+    padding: $size-2;
+  }
+  .my-card__subtitle,
+  .my-card__text {
+    margin-bottom: $size-2;
+  }
+}

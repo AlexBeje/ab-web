@@ -14,18 +14,21 @@
       rel="stylesheet"
     />
     <script src="./script/menu.js" defer></script>
+    <script src="./script/card.js" defer></script>
+    <script src="./script/progress-bar.js" defer></script>
   </head>
   <body>
+    <div class="progress-bar"></div>
     <div class="container-fluid">
       <div class="row main-page-bg">
         <div class="col main-page">
           <nav class="nav d-flex justify-content-end">
-            <div class="nav__icon" onclick="openMenu()">
+            <div class="nav__icon" onclick="toggleMenu()">
               <div class="nav__icon--burger d-block"></div>
               <div class="nav__icon--close"></div>
             </div>
             <div class="nav__items">
-              <h1 class="nav__item">PR0JECTS</h1>
+              <h1 class="nav__item"><a href="#projects-page" onclick="toggleMenu()">PR0JECTS</a></h1>
               <h1 class="nav__item">SK1LLS</h1>
               <h1 class="nav__item">C0NT4CT</h1>
             </div>
@@ -38,8 +41,33 @@
             </p>
           </div>
           <div class="more">
-            <div class="more__icon text-center">⌄</div>
-            <h2 class="more__text text-center">PR0JECTS</h2>
+            <div class="more__icon text-center"><a href="#projects-page">⌄</a></div>
+            <h2 class="more__text text-center"><a href="#projects-page">PR0JECTS</a></h2>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="projects-page-bg" id="projects-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 projects-page">
+            <h1 class="projects-page__title text-center">DEVEL0PED PR0JECTS</h1>
+            <p class="projects-page__text text-center">Here are listed developed and in
+              progress projects.</p>
+            <div class="my-card">
+              <div class="my-card__selection">
+                <div class="my-card__first my-card--active" onClick="selectFirstCard()"><h2>I.</h2></div>
+                <div class="my-card__second" onClick="selectSecondCard()"><h2>II.</h2></div>
+                <div class="my-card__third" onClick="selectThirdCard()"><h2>III.</h2></div>
+              </div>
+              <div class="my-card__body">
+                <h1 class="my-card__title"></h1>
+                <p class="my-card__subtitle"></p>
+                <p class="my-card__text"></p>
+                <button class="my-card__button" onClick="navigateTo()"><h2>See More</h2></button>
+              </div>
+              <div class="my-card__img"></div>
+            </div>
           </div>
         </div>
       </div>

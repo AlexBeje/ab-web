@@ -1,5 +1,8 @@
-@import "./style/bootstrap-reset-default";
+@import "./style/reset-before";
 @import "./node_modules/bootstrap/scss/bootstrap";
-@import "./style/bootstrap-reset";
+@import "./style/reset-after";
+@import "./style/main-addons";
 @import "./style/pages/main-page";
+@import "./style/media-queries";
+@import "./style/pages/projects-page";
 @import "./style/typography";

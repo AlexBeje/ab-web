@@ -1,0 +1,19 @@
+// Definition of the mobile media queries
+@mixin for-iphone-8 {
+  @media (max-width: 380px) {
+    @content;
+  }
+}
+
+@mixin for-iphone-se {
+  @media (max-width: 320px) {
+    @content;
+  }
+}
+
+// Default header size on smaller devices
+@include for-iphone-se {
+  h1 {
+    font-size: 1.5rem;
+  }
+}
