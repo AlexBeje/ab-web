@@ -6,7 +6,7 @@
 }
 
 @mixin for-iphone-se {
-  @media (max-width: 320px) {
+  @media only screen and (max-height: 450px), screen and (max-width: 360px) {
     @content;
   }
 }
