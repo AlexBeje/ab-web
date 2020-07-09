@@ -1,7 +1,8 @@
 @import "../eight-point-grid-system";
+@import "../media-queries";
 
 .main-page-bg {
-  background: $primary;
+  background: $secondary;
 }
 
 .main-page {
@@ -21,18 +22,18 @@
   z-index: 200;
   &:hover {
     .nav__icon--burger {
-      background: $secondary;
+      background: $primary;
       &::after,
       &::before {
-        background: $secondary;
+        background: $primary;
       }
     }
   }
   &:hover {
     .nav__icon--close {
-      background: $secondary;
+      background: $primary;
       &::after {
-        background: $secondary;
+        background: $primary;
       }
     }
   }
@@ -102,7 +103,7 @@
   margin-bottom: $size-2;
   transition: $transition;
   &:hover {
-    color: $secondary;
+    color: $primary;
     cursor: pointer;
   }
   &:last-child {
@@ -131,7 +132,7 @@
   &:hover {
     cursor: pointer;
     .more__icon {
-      color: $secondary;
+      color: $primary;
     }
   }
 }
@@ -153,9 +154,9 @@
 }
 
 // Devices smaller than iPhone SE
-@media only screen and (max-height: 450px), screen and (max-width: 360px) {
+@include for-iphone-se {
   .main-page {
-    background: $primary;
+    background: $secondary;
     display: flex;
     flex-flow: column;
     justify-content: space-between;
