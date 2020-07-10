@@ -18,7 +18,9 @@
     <script src="./script/progress-bar.js" defer></script>
   </head>
   <body>
-    <div class="progress-bar"></div>
+    <!-- -------- Progress bar -------- -->
+    <div class="my-progress-bar"></div>
+    <!-- -------- Main page -------- -->
     <div class="container-fluid">
       <div class="row main-page-bg">
         <div class="col main-page">
@@ -31,7 +33,7 @@
               <h1 class="nav__item">
                 <a href="#projects-page" onclick="toggleMenu()">PR0JECTS</a>
               </h1>
-              <h1 class="nav__item">SK1LLS</h1>
+              <h1 class="nav__item"><a href="#skills-page" onclick="toggleMenu()">SK1LLS</a></h1>
               <h1 class="nav__item">C0NT4CT</h1>
             </div>
           </nav>
@@ -51,12 +53,13 @@
         </div>
       </div>
     </div>
+    <!-- -------- Projects page -------- -->
     <div class="projects-page-bg" id="projects-page">
       <div class="container">
         <div class="row">
           <div class="col-12 projects-page">
             <h1 class="projects-page__title text-center">DEVEL0PED PR0JECTS</h1>
-            <p class="projects-page__text text-center">
+            <p class="projects-page__subtitle text-center">
               Here are listed developed and in progress projects.
             </p>
             <div class="my-card">
@@ -84,6 +87,65 @@
               </div>
               <div class="my-card__img"></div>
             </div>
+            <button class="projects-page__button">
+              <h2>See all projects</h2>
+            </button>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------- Skills page -------- -->
+    <div class="skills-page-bg" id="skills-page">
+      <div class="container">
+        <div class="row">
+          <div class="col-12 skills-page">
+            <h1 class="skills-page__title text-center">SK1LLS</h1>
+            <p class="skills-page__subtitle text-center">
+              These are the skills that I aquired during the last years.
+            </p>
+          </div>
+        </div>
+        <div class="row skills-page__item">
+          <div class="col-4">
+            <div class="skills-page__icon--html"></div>
+          </div>
+          <div class="col-8">
+            <p class="skills-page__text">
+              HTML and HTML5 knowledge, along with applied visual design and
+              accesibility skills.
+            </p>
+          </div>
+        </div>
+        <div class="row skills-page__item">
+          <div class="col-8">
+            <p class="skills-page__text">
+              Responsive CSS3 web design, flexboxand css grid insight.
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="skills-page__icon--css"></div>
+          </div>
+        </div>
+        <div class="row skills-page__item">
+          <div class="col-4">
+            <div class="skills-page__icon--js"></div>
+          </div>
+          <div class="col-8">
+            <p class="skills-page__text">
+              Vanila and ES6 Javascript knowledge, Regular expresions skills.
+              Functional programming familiarity.
+            </p>
+          </div>
+        </div>
+        <div class="row skills-page__item">
+          <div class="col-8">
+            <p class="skills-page__text">
+              Vue.js library insight. Gathered knowladge from udemy and vue
+              mastery courses.
+            </p>
+          </div>
+          <div class="col-4">
+            <div class="skills-page__icon--vue"></div>
           </div>
         </div>
       </div>

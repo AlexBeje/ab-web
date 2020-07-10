@@ -8,6 +8,7 @@ h1, h2, h3 {
 
 h1 {
   font-size: $typo-3;
+  line-height: $typo-4;
 }
 
 h2 {
@@ -22,5 +23,6 @@ p {
   font-family: 'Gruppo', cursive;
   margin-bottom: 0;
   margin-top: 0;
-  line-height: 16px;
+  font-size: $typo-2;
+  line-height: $typo-2;
 }
