@@ -1,7 +1,7 @@
 @import "../media-queries";
 
 .main-page-bg {
-  background: $secondary;
+  background: $clr-2;
 }
 
 .main-page {
@@ -22,19 +22,19 @@
   &:hover,
   &:active {
     .nav__icon--burger {
-      background: $primary;
+      background: $clr-0;
       &::after,
       &::before {
-        background: $primary;
+        background: $clr-0;
       }
     }
   }
   &:hover,
   &:active {
     .nav__icon--close {
-      background: $primary;
+      background: $clr-0;
       &::after {
-        background: $primary;
+        background: $clr-0;
       }
     }
   }
@@ -89,7 +89,7 @@
 
 .nav__items {
   align-items: center;
-  background: black;
+  background: $black;
   display: none;
   flex-flow: column;
   height: 100%;
@@ -107,7 +107,7 @@
   }
   a:hover,
   a:active {
-    color: $primary;
+    color: $clr-0;
     cursor: pointer;
   }
 }
@@ -116,6 +116,7 @@
   margin: 0 auto;
   padding: 0 $size-3 $size-2 $size-3;
   width: 360px;
+  color: $clr-0;
 }
 
 .profile__text {
@@ -135,7 +136,7 @@
     cursor: pointer;
     .more__icon {
       a {
-        color: $primary;
+        color: $clr-0;
       }
     }
   }

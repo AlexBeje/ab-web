@@ -1,14 +1,10 @@
-const progressBar = document.querySelector(".progress-bar");
+const progressBar = document.querySelector(".my-progress-bar");
 
 function getScrollPercent() {
-  const h = document.documentElement,
-    b = document.body,
-    st = "scrollTop",
-    sh = "scrollHeight";
-  let progress = Math.round(
-    ((h[st] || b[st]) / ((h[sh] || b[sh]) - h.clientHeight)) * 100
-  );
-  progressBar.style.width = `${progress}%`;
+  var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+  var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+  var scrolled = (winScroll / height) * 100;
+  progressBar.style.width = scrolled + "%";
 }
 
 body.onscroll = function () {
