@@ -1,4 +1,3 @@
-
 @import "../media-queries";
 
 .main-page-bg {
@@ -20,7 +19,8 @@
   margin: $size-3;
   width: $size-3;
   z-index: 200;
-  &:hover {
+  &:hover,
+  &:active {
     .nav__icon--burger {
       background: $primary;
       &::after,
@@ -29,7 +29,8 @@
       }
     }
   }
-  &:hover {
+  &:hover,
+  &:active {
     .nav__icon--close {
       background: $primary;
       &::after {
@@ -101,13 +102,13 @@
 
 .nav__item {
   margin-bottom: $size-2;
-  transition: $transition;
-  &:hover {
-    color: $primary;
-    cursor: pointer;
-  }
   &:last-child {
     margin-bottom: 0;
+  }
+  a:hover,
+  a:active {
+    color: $primary;
+    cursor: pointer;
   }
 }
 
@@ -129,10 +130,13 @@
   position: absolute;
   text-align: center;
   width: 100px;
-  &:hover {
+  &:hover,
+  &:active {
     cursor: pointer;
     .more__icon {
-      color: $primary;
+      a {
+        color: $primary;
+      }
     }
   }
 }

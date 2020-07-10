@@ -1,11 +1,3 @@
-.projects-page-bg {
-  background: linear-gradient(
-    90deg,
-    rgba(98, 229, 255, 1) 0%,
-    rgba(0, 179, 216, 1) 100%
-  );
-}
-
 .projects-page {
   padding: $size-3;
 }
@@ -36,7 +28,7 @@
   padding: $size-1;
   text-align: center;
   width: 31.5%;
-  &:hover {
+  &:hover, &:active {
     color: $primary;
   }
   h2 {
@@ -47,7 +39,7 @@
 .my-card--active {
   background: #333333;
   cursor: default;
-  &:hover {
+  &:hover, &:active {
     background: #333333;
     color: $white;
   }
@@ -60,7 +52,7 @@
 }
 
 .my-card__title {
-  color: $primary;
+  color: $white;
 }
 
 .my-card__subtitle {
@@ -72,15 +64,15 @@
 }
 
 .my-card__button {
-  background: $primary;
+  background: $white;
   border: none;
   border-radius: 5px;
   float: right;
   padding: $size-1 $size-2;
   transition: $transition;
   width: auto;
-  &:hover {
-    background: $white;
+  &:hover, &:active {
+    background: $primary;
     color: #333333;
   }
 }
