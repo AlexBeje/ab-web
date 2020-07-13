@@ -1,6 +1,10 @@
+.projects-page-bg {
+  background: $clr-1;
+  color: $white;
+}
+
 .projects-page {
   background-color: $clr-1;
-  color: $white;
   display: flex;
   flex-direction: column;
   padding: $size-3 $size-3 $size-2 $size-3;
@@ -9,7 +13,7 @@
 .projects-page__title {
   color: $clr-0;
   margin-bottom: $size-1;
-}
+} 
 
 .projects-page__subtitle {
   margin-bottom: $size-3;
@@ -75,8 +79,8 @@
 
 .my-card__button,
 .projects-page__button {
-  background: $clr-1;
-  color: $white;
+  background: $clr-0;
+  color: $clr-1;;
   border: none;
   border-radius: 5px;
   float: right;
@@ -85,19 +89,19 @@
   width: auto;
   &:hover,
   &:active {
-    background: $clr-0;
+    background: $white;
     color: $clr-2;
   }
 }
 
 .projects-page__button {
-  background: $clr-3;
-  color: $white;
+  background: $clr-0;
+  color: $clr-1;
   float: none;
   margin: $size-2 auto $size-1 auto;
   &:hover,
   &:active {
-    background: $clr-0;
+    background: $white;
     color: $clr-1;
   }
 }

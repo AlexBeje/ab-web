@@ -33,7 +33,9 @@
               <h1 class="nav__item">
                 <a href="#projects-page" onclick="toggleMenu()">PR0JECTS</a>
               </h1>
-              <h1 class="nav__item"><a href="#skills-page" onclick="toggleMenu()">SK1LLS</a></h1>
+              <h1 class="nav__item">
+                <a href="#skills-page" onclick="toggleMenu()">SK1LLS</a>
+              </h1>
               <h1 class="nav__item">C0NT4CT</h1>
             </div>
           </nav>
@@ -146,6 +148,33 @@
           </div>
           <div class="col-4">
             <div class="skills-page__icon--vue"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- -------- Contact page -------- -->
+    <div class="contact-page-bg" id="contact-page">
+      <div class="container">
+        <div class="row">
+          <div class="col contact-page">
+            <h1 class="contact-page__title text-center">C0NT4CT</h1>
+            <p class="contact-page__subtitle text-center">
+              If you want to colaborate, ask a question or just say hi, here is
+              the place to do it.
+            </p>
+            <form action="mailto:alex.bejenaru93@gmail.com" method="post" enctype="text/plain" class="contact-page__form">
+              <input type="text" class="contact-page__subject" placeholder="Subject" />
+              <input type="email" class="contact-page__email" placeholder="Email"/>
+              <textarea name="" id="" cols="30" rows="10" class="contact-page__text" placeholder="Message"></textarea>
+              <button type="submit" class="contact-page__button">
+                <h2>Send</h2>
+              </button>
+            </form>
+            <form action="mailto:alex.bejenaru93@gmail.com" method="post" enctype="text/plain" >
+              FirstName:<input type="text" name="FirstName">
+              Email:<input type="text" name="Email">
+              <input type="submit" name="submit" value="Submit">
+              </form>
           </div>
         </div>
       </div>
