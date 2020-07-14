@@ -13,9 +13,10 @@
       href="https://fonts.googleapis.com/css2?family=Gruppo&display=swap"
       rel="stylesheet"
     />
-    <script src="./script/menu.js" defer></script>
     <script src="./script/card.js" defer></script>
+    <script src="./script/menu.js" defer></script>
     <script src="./script/progress-bar.js" defer></script>
+    <script src="./script/send-mail.js" defer></script>
   </head>
   <body>
     <!-- -------- Progress bar -------- -->
@@ -162,19 +163,14 @@
               If you want to colaborate, ask a question or just say hi, here is
               the place to do it.
             </p>
-            <form action="mailto:alex.bejenaru93@gmail.com" method="post" enctype="text/plain" class="contact-page__form">
-              <input type="text" class="contact-page__subject" placeholder="Subject" />
-              <input type="email" class="contact-page__email" placeholder="Email"/>
+            <!-- <form class="contact-page__form"> -->
+              <input type="text" class="contact-page__name" placeholder="Name" />
+              <input type="email" class="contact-page__subject" placeholder="Subject"/>
               <textarea name="" id="" cols="30" rows="10" class="contact-page__text" placeholder="Message"></textarea>
-              <button type="submit" class="contact-page__button">
+              <button class="contact-page__button" onclick="sendMail()">
                 <h2>Send</h2>
               </button>
-            </form>
-            <form action="mailto:alex.bejenaru93@gmail.com" method="post" enctype="text/plain" >
-              FirstName:<input type="text" name="FirstName">
-              Email:<input type="text" name="Email">
-              <input type="submit" name="submit" value="Submit">
-              </form>
+            <!-- </form> -->
           </div>
         </div>
       </div>

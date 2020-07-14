@@ -5807,8 +5807,8 @@ input, textarea {
           justify-content: center;
 }
 
+.contact-page__name,
 .contact-page__subject,
-.contact-page__email,
 .contact-page__text {
   padding: 1em;
   margin-bottom: 0.5em;
@@ -5816,26 +5816,26 @@ input, textarea {
   border-radius: 5px;
 }
 
+.contact-page__name::-webkit-input-placeholder,
 .contact-page__subject::-webkit-input-placeholder,
-.contact-page__email::-webkit-input-placeholder,
 .contact-page__text::-webkit-input-placeholder {
   color: #1F1F1F;
 }
 
+.contact-page__name:-ms-input-placeholder,
 .contact-page__subject:-ms-input-placeholder,
-.contact-page__email:-ms-input-placeholder,
 .contact-page__text:-ms-input-placeholder {
   color: #1F1F1F;
 }
 
+.contact-page__name::-ms-input-placeholder,
 .contact-page__subject::-ms-input-placeholder,
-.contact-page__email::-ms-input-placeholder,
 .contact-page__text::-ms-input-placeholder {
   color: #1F1F1F;
 }
 
+.contact-page__name::placeholder,
 .contact-page__subject::placeholder,
-.contact-page__email::placeholder,
 .contact-page__text::placeholder {
   color: #1F1F1F;
 }
