@@ -1,7 +1,10 @@
 .skills-page-bg {
   background: $clr-2;
   color: $white;
-  padding: $size-3;
+}
+
+.skills-page {
+  padding: $size-3 $size-4;
 }
 
 .skills-page__title {

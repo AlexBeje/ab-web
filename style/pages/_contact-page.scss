@@ -1,9 +1,13 @@
+.contact-page-bg {
+  background: $clr-1;
+}
+
 .contact-page {
   background: $clr-1;
   color: $white;
   display: flex;
   flex-direction: column;
-  padding: $size-3 $size-5 $size-2 $size-5;
+  padding: $size-3 $size-3 $size-2 $size-3;
 }
 
 .contact-page__title {
@@ -54,9 +58,9 @@
   }
 }
 
-// Devices smaller than iPhone SE
-@include for-iphone-8 {
-  .contact-page {
-    padding: $size-3 $size-3 $size-2 $size-3;
-  }
-}
+// // Devices smaller than iPhone SE
+// @include for-iphone-8 {
+//   .contact-page {
+//     padding: $size-3 $size-3 $size-2 $size-3;
+//   }
+// }
