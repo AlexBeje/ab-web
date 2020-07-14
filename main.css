@@ -5310,7 +5310,7 @@ a:hover, a:active {
 }
 
 .my-progress-bar {
-  background-color: #1DD1FF;
+  background-color: #1AC5FF;
   height: 0.5em;
   position: fixed;
   z-index: 200;
@@ -5339,6 +5339,12 @@ p {
   font-family: 'Gruppo', cursive;
   margin-bottom: 0;
   margin-top: 0;
+  font-size: 1rem;
+  line-height: 1rem;
+}
+
+input, textarea {
+  font-family: 'Gruppo', cursive;
   font-size: 1rem;
   line-height: 1rem;
 }
@@ -5550,9 +5556,13 @@ p {
   }
 }
 
+.projects-page-bg {
+  background: #1F1F1F;
+  color: #fff;
+}
+
 .projects-page {
   background-color: #1F1F1F;
-  color: #fff;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -5644,8 +5654,8 @@ p {
 
 .my-card__button,
 .projects-page__button {
-  background: #1F1F1F;
-  color: #fff;
+  background: #1AC5FF;
+  color: #1F1F1F;
   border: none;
   border-radius: 5px;
   float: right;
@@ -5658,19 +5668,19 @@ p {
 .my-card__button:hover, .my-card__button:active,
 .projects-page__button:hover,
 .projects-page__button:active {
-  background: #1AC5FF;
+  background: #fff;
   color: #262626;
 }
 
 .projects-page__button {
-  background: #2E2E2E;
-  color: #fff;
+  background: #1AC5FF;
+  color: #1F1F1F;
   float: none;
   margin: 1em auto 0.5em auto;
 }
 
 .projects-page__button:hover, .projects-page__button:active {
-  background: #1AC5FF;
+  background: #fff;
   color: #1F1F1F;
 }
 
@@ -5759,6 +5769,102 @@ p {
     background-size: 40px;
     height: 40px;
     width: 40px;
+  }
+}
+
+.contact-page {
+  background: #1F1F1F;
+  color: #fff;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  padding: 2em 4em 1em 4em;
+}
+
+.contact-page__title {
+  color: #1AC5FF;
+  margin-bottom: 0.5em;
+}
+
+.contact-page__subtitle {
+  margin-bottom: 2em;
+}
+
+.contact-page__form {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+}
+
+.contact-page__name,
+.contact-page__subject,
+.contact-page__text {
+  padding: 1em;
+  margin-bottom: 0.5em;
+  border: none;
+  border-radius: 5px;
+}
+
+.contact-page__name::-webkit-input-placeholder,
+.contact-page__subject::-webkit-input-placeholder,
+.contact-page__text::-webkit-input-placeholder {
+  color: #1F1F1F;
+}
+
+.contact-page__name:-ms-input-placeholder,
+.contact-page__subject:-ms-input-placeholder,
+.contact-page__text:-ms-input-placeholder {
+  color: #1F1F1F;
+}
+
+.contact-page__name::-ms-input-placeholder,
+.contact-page__subject::-ms-input-placeholder,
+.contact-page__text::-ms-input-placeholder {
+  color: #1F1F1F;
+}
+
+.contact-page__name::placeholder,
+.contact-page__subject::placeholder,
+.contact-page__text::placeholder {
+  color: #1F1F1F;
+}
+
+.contact-page__text {
+  margin-bottom: 2em;
+}
+
+.contact-page__button {
+  background: #1AC5FF;
+  color: #1F1F1F;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  padding: 0.5em 1em;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: auto;
+  margin-bottom: 2em;
+}
+
+.contact-page__button:hover, .contact-page__button:active {
+  background: #fff;
+  color: #262626;
+}
+
+@media (max-width: 380px) {
+  .contact-page {
+    padding: 2em 2em 1em 2em;
   }
 }
 /*# sourceMappingURL=main.css.map */

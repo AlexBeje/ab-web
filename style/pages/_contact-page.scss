@@ -1,0 +1,62 @@
+.contact-page {
+  background: $clr-1;
+  color: $white;
+  display: flex;
+  flex-direction: column;
+  padding: $size-3 $size-5 $size-2 $size-5;
+}
+
+.contact-page__title {
+  color: $clr-0;
+  margin-bottom: $size-1;
+}
+
+.contact-page__subtitle {
+  margin-bottom: $size-3;
+}
+
+.contact-page__form {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+.contact-page__name,
+.contact-page__subject,
+.contact-page__text {
+  padding: $size-2;
+  margin-bottom: $size-1;
+  border: none;
+  border-radius: 5px;
+  &::placeholder {
+    color: $clr-1;
+  }
+}
+
+.contact-page__text {
+  margin-bottom: $size-3;
+}
+
+.contact-page__button {
+  background: $clr-0;
+  color: $clr-1;;
+  border: none;
+  border-radius: 5px;
+  float: right;
+  padding: $size-1 $size-2;
+  transition: $transition;
+  width: auto;
+  margin-bottom: $size-3;
+  &:hover,
+  &:active {
+    background: $white;
+    color: $clr-2;
+  }
+}
+
+// Devices smaller than iPhone SE
+@include for-iphone-8 {
+  .contact-page {
+    padding: $size-3 $size-3 $size-2 $size-3;
+  }
+}
