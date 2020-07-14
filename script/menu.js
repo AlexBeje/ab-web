@@ -6,6 +6,7 @@ const navItems = document.querySelector(".nav__items");
 
 const projectsPage = document.querySelector("#projects-page");
 const skillsPage = document.querySelector("#skills-page");
+const contactPage = document.querySelector("#contact-page");
 
 function toggleMenu() {
   if (burgerIcon.classList.contains("d-block")) {
@@ -14,11 +15,13 @@ function toggleMenu() {
     navItems.className = "nav__items d-flex";
     projectsPage.style = "display: none;";
     skillsPage.style = "display: none;";
+    contactPage.style = "display: none;";
   } else {
     closeIcon.className = "nav__icon--close d-none";
     burgerIcon.className = "nav__icon--burger d-block";
     navItems.className = "nav__items d-none";
     projectsPage.style = "display: block;";
     skillsPage.style = "display: block;";
+    contactPage.style = "display: block;";
   }
 }

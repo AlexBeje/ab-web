@@ -5708,7 +5708,10 @@ input, textarea {
 .skills-page-bg {
   background: #262626;
   color: #fff;
-  padding: 2em;
+}
+
+.skills-page {
+  padding: 2em 3em;
 }
 
 .skills-page__title {
@@ -5772,6 +5775,10 @@ input, textarea {
   }
 }
 
+.contact-page-bg {
+  background: #1F1F1F;
+}
+
 .contact-page {
   background: #1F1F1F;
   color: #fff;
@@ -5782,7 +5789,7 @@ input, textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 2em 4em 1em 4em;
+  padding: 2em 2em 1em 2em;
 }
 
 .contact-page__title {
@@ -5860,11 +5867,5 @@ input, textarea {
 .contact-page__button:hover, .contact-page__button:active {
   background: #fff;
   color: #262626;
-}
-
-@media (max-width: 380px) {
-  .contact-page {
-    padding: 2em 2em 1em 2em;
-  }
 }
 /*# sourceMappingURL=main.css.map */
