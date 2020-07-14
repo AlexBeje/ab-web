@@ -5303,7 +5303,7 @@ a:hover, a:active {
   transition: 0.4s;
 }
 
-@media only screen and (max-height: 450px), screen and (max-width: 360px) {
+@media (max-height: 450px), (max-width: 360px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -5349,7 +5349,7 @@ input, textarea {
   line-height: 1rem;
 }
 
-@media only screen and (max-height: 450px), screen and (max-width: 360px) {
+@media (max-height: 450px), (max-width: 360px) {
   h1 {
     font-size: 1.5rem;
   }
@@ -5529,7 +5529,7 @@ input, textarea {
   }
 }
 
-@media only screen and (max-height: 450px), screen and (max-width: 360px) {
+@media (max-height: 450px), (max-width: 360px) {
   .main-page {
     background: #2C2C2A;
     display: -webkit-box;
@@ -5553,6 +5553,64 @@ input, textarea {
   }
   .more {
     position: relative;
+  }
+}
+
+@media (min-width: 420px) and (max-width: 1100px) {
+  .main-page {
+    background-position: bottom 0 right 0;
+    background-size: 150%;
+  }
+  .profile {
+    width: 75%;
+    top: calc(50% - 50px);
+    position: absolute;
+  }
+  .profile__title {
+    width: auto;
+    font-size: 2rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5em;
+  }
+  .profile__text {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 1rem;
+    line-height: 1rem;
+  }
+  .more > * {
+    font-size: 1rem;
+  }
+}
+
+@media (min-width: 1100px) and (max-width: 1400px) {
+  .main-page {
+    background-position: bottom 0 right 0;
+    background-size: 150%;
+  }
+  .profile {
+    width: 75%;
+    top: calc(50% - 50px);
+    position: absolute;
+  }
+  .profile__title {
+    width: auto;
+    font-size: 3.5rem;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 0.5em;
+  }
+  .profile__text {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    font-size: 2rem;
+    line-height: 2rem;
+  }
+  .more > * {
+    font-size: 1rem;
   }
 }
 
@@ -5764,7 +5822,7 @@ input, textarea {
   width: 4em;
 }
 
-@media only screen and (max-height: 450px), screen and (max-width: 360px) {
+@media (max-height: 450px), (max-width: 360px) {
   .skills-page__icon--html,
   .skills-page__icon--css,
   .skills-page__icon--js,

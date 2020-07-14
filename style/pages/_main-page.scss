@@ -178,3 +178,44 @@
     position: relative;
   }
 }
+
+// Desktop stylemixin
+// @mixin main-page-iPad($title-size, $text-size) {
+@mixin main-page-iPad($title-size, $text-size) {
+  .main-page {
+    background-position: bottom 0 right 0;
+    background-size: 150%;
+  }
+  .profile {
+    width: 75%;
+    top: calc(50% - 50px);
+    position: absolute;
+    // left: 80px;
+  }
+  .profile__title {
+    width: auto;
+    font-size: $title-size;
+    margin: 0;
+    padding: 0;
+    margin-bottom: $size-1;
+  }
+  .profile__text {
+    text-align: center;
+    width: 65%;
+    margin: 0 auto;
+    font-size: $text-size;
+    line-height: $text-size;
+  }
+  .more > * {
+    font-size: 1rem;
+  }
+}
+
+@include for-iPad-11 {
+  @include main-page-iPad(2rem, 1rem);
+}
+
+@include for-iPad-13 {
+  @include main-page-iPad(3.5rem, 2rem);
+}
+

@@ -1,3 +1,16 @@
+// Definition of the desktop media queries
+@mixin for-iPad-11() {
+  @media (min-width: 420px) and (max-width: 1100px) {
+    @content;
+  }
+}
+
+@mixin for-iPad-13() {
+  @media (min-width: 1100px) and (max-width: 1400px) {
+    @content;
+  }
+}
+
 // Definition of the mobile media queries
 @mixin for-iphone-8 {
   @media (max-width: 380px) {
@@ -6,7 +19,7 @@
 }
 
 @mixin for-iphone-se {
-  @media only screen and (max-height: 450px), screen and (max-width: 360px) {
+  @media (max-height: 450px), (max-width: 360px) {
     @content;
   }
 }
