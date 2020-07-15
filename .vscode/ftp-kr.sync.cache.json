@@ -15,8 +15,8 @@
       },
       "CNAME": {
         "type": "-",
-        "size": 20,
-        "lmtime": 1594567145777,
+        "size": 16,
+        "lmtime": 1594705931971,
         "modified": false
       },
       "assets": {
@@ -89,8 +89,8 @@
       },
       "index.html": {
         "type": "-",
-        "size": 6917,
-        "lmtime": 1594665310467,
+        "size": 6654,
+        "lmtime": 1594757057803,
         "modified": false
       },
       "lib": {
@@ -339,52 +339,58 @@
       },
       "main.css": {
         "type": "-",
-        "size": 108872,
-        "lmtime": 1594663174274,
+        "size": 109742,
+        "lmtime": 1594828703739,
         "modified": false
       },
       "main.css.map": {
         "type": "-",
-        "size": 94443,
-        "lmtime": 1594663174274,
+        "size": 95401,
+        "lmtime": 1594828703739,
         "modified": false
       },
       "main.scss": {
         "type": "-",
         "size": 2393,
-        "lmtime": 1594585374466,
+        "lmtime": 1594705931973,
         "modified": false
       },
       "node_modules": {},
       "package-lock.json": {
         "type": "-",
         "size": 362,
-        "lmtime": 0,
+        "lmtime": 1594705793331,
         "modified": false
       },
       "package.json": {
         "type": "-",
         "size": 531,
-        "lmtime": 0,
+        "lmtime": 1594705790096,
         "modified": false
       },
       "script": {
         "card.js": {
           "type": "-",
           "size": 3080,
-          "lmtime": 1594567145784,
+          "lmtime": 1594669272121,
           "modified": false
         },
         "menu.js": {
           "type": "-",
-          "size": 924,
-          "lmtime": 1594567145784,
+          "size": 1070,
+          "lmtime": 1594708996597,
           "modified": false
         },
         "progress-bar.js": {
           "type": "-",
           "size": 417,
           "lmtime": 1594567145785,
+          "modified": false
+        },
+        "send-mail.js": {
+          "type": "-",
+          "size": 381,
+          "lmtime": 1594708996597,
           "modified": false
         }
       },
@@ -398,13 +404,13 @@
         "_addons.scss": {
           "type": "-",
           "size": 102,
-          "lmtime": 1594567247864,
+          "lmtime": 1594828687882,
           "modified": false
         },
         "_eight-point-grid-system.scss": {
           "type": "-",
-          "size": 493,
-          "lmtime": 1594567145786,
+          "size": 926,
+          "lmtime": 1594828702867,
           "modified": false
         },
         "_main-addons.scss": {
@@ -415,14 +421,14 @@
         },
         "_media-queries.scss": {
           "type": "-",
-          "size": 340,
-          "lmtime": 0,
+          "size": 553,
+          "lmtime": 1594758946008,
           "modified": false
         },
         "_reset-after.scss": {
           "type": "-",
           "size": 1144,
-          "lmtime": 1594365424148,
+          "lmtime": 1594828687884,
           "modified": false
         },
         "_reset-before.scss": {
@@ -434,7 +440,7 @@
         "_typography.scss": {
           "type": "-",
           "size": 450,
-          "lmtime": 1594662777895,
+          "lmtime": 1594705931974,
           "modified": false
         },
         "addons": {},
@@ -447,20 +453,20 @@
           },
           "_contact-page.scss": {
             "type": "-",
-            "size": 1027,
-            "lmtime": 1594663173717,
-            "modified": false
+            "size": 1095,
+            "lmtime": 1594826283701,
+            "modified": true
           },
           "_main-page.scss": {
             "type": "-",
-            "size": 2912,
-            "lmtime": 1594567145787,
+            "size": 3669,
+            "lmtime": 1594828687885,
             "modified": false
           },
           "_projects-page.scss": {
             "type": "-",
             "size": 1986,
-            "lmtime": 1594662393978,
+            "lmtime": 1594828687885,
             "modified": false
           },
           "_skills-page.scs": {
@@ -471,9 +477,9 @@
           },
           "_skills-page.scss": {
             "type": "-",
-            "size": 1048,
-            "lmtime": 1594567145788,
-            "modified": false
+            "size": 1082,
+            "lmtime": 1594826323860,
+            "modified": true
           }
         }
       }

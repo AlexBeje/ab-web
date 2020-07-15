@@ -1,5 +1,4 @@
 // Set font family.
-
 h1, h2, h3 {
   font-family: 'Orbitron', sans-serif;
   margin-bottom: 0;
@@ -7,28 +6,28 @@ h1, h2, h3 {
 }
 
 h1 {
-  font-size: $typo-3;
-  line-height: $typo-4;
+  font-size: $size-3;
+  line-height: $size-4;
 }
 
 h2 {
-  font-size: $typo-2;
+  font-size: $size-2;
 }
 
 h3 {
-  font-size: $typo-1;
+  font-size: $size-1;
 }
 
 p {
   font-family: 'Gruppo', cursive;
   margin-bottom: 0;
   margin-top: 0;
-  font-size: $typo-2;
-  line-height: $typo-2;
+  font-size: $size-2;
+  line-height: $size-2;
 }
 
 input, textarea {
   font-family: 'Gruppo', cursive;
-  font-size: $typo-2;
-  line-height: $typo-2;
+  font-size: $size-2;
+  line-height: $size-2;
 }
