@@ -1,5 +1,5 @@
 .main-page-bg {
-  background: $clr-2;
+  background: #232323;
 }
 
 .main-page {
@@ -126,16 +126,18 @@
   }
 }
 
-@include for-ipad-s {
+@mixin ipad-base {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto 150%;
   }
+
   .nav__icon {
     margin: $size-5;
   }
+
   .nav__icon--burger {
     background-image: url(../../assets/menu-m.svg);
     width: $size-8;
@@ -153,16 +155,71 @@
       background-image: url(../../assets/close-m-hover.svg);
     }
   }
+
   .nav__item {
     margin-bottom: $size-8;
     font-size: $size-8;
   }
+
   .profile {
-    width: 460px;
+    width: auto;
     padding: 0;
-    margin-left: $size-14;
+    margin: 0 auto 0 $size-14;
   }
+
   .profile__text {
     width: 276px;
+  }
+}
+
+@include for-ipad-s {
+  @include ipad-base;
+}
+
+@include for-ipad-m {
+  @include ipad-base;
+
+  .profile__title {
+    font-size: $size-5;
+  }
+
+  .profile__text {
+    font-size: $size-3;
+    line-height: $size-3;
+    width: 415px;
+  }
+
+  .more {
+    h2 {
+      font-size: $size-3;
+    }
+  }
+
+  .more__icon {
+    font-size: $size-3;
+  }
+}
+
+@include for-ipad-l {
+  @include ipad-base;
+
+  .profile__title {
+    font-size: $size-7;
+  }
+
+  .profile__text {
+    font-size: $size-4;
+    line-height: $size-4;
+    width: 590px;
+  }
+
+  .more {
+    h2 {
+      font-size: $size-4;
+    }
+  }
+
+  .more__icon {
+    font-size: $size-4;
   }
 }

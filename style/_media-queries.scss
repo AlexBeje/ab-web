@@ -1,15 +1,6 @@
 // Definition of the desktop media queries
-@mixin for-iPad-11() {
-  @media (min-width: 420px) and (max-width: 1100px) {
-    @content;
-  }
-}
 
-@mixin for-iPad-13() {
-  @media (min-width: 1100px) and (max-width: 1400px) {
-    @content;
-  }
-}
+
 
 // Definition of the mobile media queries
 @mixin for-iphone-8 {
@@ -42,19 +33,26 @@
 
 // Tablet specific
 @mixin for-ipad-s {
-  @media (min-width: 950px) and (max-width: 1024px) and (max-height: 780px) {
+  @media (min-width: 950px) and (max-width: 1030px) and (max-height: 780px) {
     @content;
   }
 }
 
 @mixin for-ipad-m {
-  @media (min-width: 1030px) and (max-width: 1120px) {
+  @media (min-width: 1030px) and (max-width: 1120px) and (max-height: 840px) {
     @content;
   }
 }
 
 @mixin for-ipad-l {
-  @media (min-width: 1120px) and (max-width: 1366px) {
+  @media (min-width: 1120px) and (max-width: 1920px) and (max-height: 1030px) {
     @content;
   }
 }
+
+// // Desktop specific
+// @mixin for-720p {
+//   @media (min-width: 490) and (max-width: 1290) {
+//     @content;
+//   }
+// }

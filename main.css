@@ -5418,7 +5418,7 @@ input, textarea {
 }
 
 .main-page-bg {
-  background: #262626;
+  background: #232323;
 }
 
 .main-page {
@@ -5567,7 +5567,7 @@ input, textarea {
   }
 }
 
-@media (min-width: 950px) and (max-width: 1024px) and (max-height: 780px) {
+@media (min-width: 950px) and (max-width: 1030px) and (max-height: 780px) {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right;
@@ -5598,12 +5598,120 @@ input, textarea {
     font-size: 8rem;
   }
   .profile {
-    width: 460px;
+    width: auto;
     padding: 0;
-    margin-left: 14rem;
+    margin: 0 auto 0 14rem;
   }
   .profile__text {
     width: 276px;
+  }
+}
+
+@media (min-width: 1030px) and (max-width: 1120px) and (max-height: 840px) {
+  .main-page {
+    background-image: url(../../assets/portrait.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+  }
+  .nav__icon {
+    margin: 5rem;
+  }
+  .nav__icon--burger {
+    background-image: url(../../assets/menu-m.svg);
+    width: 8rem;
+    height: 8rem;
+  }
+  .nav__icon--burger:hover {
+    background-image: url(../../assets/menu-m-hover.svg);
+  }
+  .nav__icon--close {
+    background-image: url(../../assets/close-m.svg);
+    width: 8rem;
+    height: 8rem;
+  }
+  .nav__icon--close:hover {
+    background-image: url(../../assets/close-m-hover.svg);
+  }
+  .nav__item {
+    margin-bottom: 8rem;
+    font-size: 8rem;
+  }
+  .profile {
+    width: auto;
+    padding: 0;
+    margin: 0 auto 0 14rem;
+  }
+  .profile__text {
+    width: 276px;
+  }
+  .profile__title {
+    font-size: 5rem;
+  }
+  .profile__text {
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 415px;
+  }
+  .more h2 {
+    font-size: 3rem;
+  }
+  .more__icon {
+    font-size: 3rem;
+  }
+}
+
+@media (min-width: 1120px) and (max-width: 1920px) and (max-height: 1030px) {
+  .main-page {
+    background-image: url(../../assets/portrait.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+  }
+  .nav__icon {
+    margin: 5rem;
+  }
+  .nav__icon--burger {
+    background-image: url(../../assets/menu-m.svg);
+    width: 8rem;
+    height: 8rem;
+  }
+  .nav__icon--burger:hover {
+    background-image: url(../../assets/menu-m-hover.svg);
+  }
+  .nav__icon--close {
+    background-image: url(../../assets/close-m.svg);
+    width: 8rem;
+    height: 8rem;
+  }
+  .nav__icon--close:hover {
+    background-image: url(../../assets/close-m-hover.svg);
+  }
+  .nav__item {
+    margin-bottom: 8rem;
+    font-size: 8rem;
+  }
+  .profile {
+    width: auto;
+    padding: 0;
+    margin: 0 auto 0 14rem;
+  }
+  .profile__text {
+    width: 276px;
+  }
+  .profile__title {
+    font-size: 7rem;
+  }
+  .profile__text {
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 590px;
+  }
+  .more h2 {
+    font-size: 4rem;
+  }
+  .more__icon {
+    font-size: 4rem;
   }
 }
 
