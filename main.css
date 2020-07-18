@@ -5511,6 +5511,7 @@ input, textarea {
   font-size: 2rem;
   text-align: center;
   margin: 0 auto;
+  width: 276px;
 }
 
 .more {
@@ -5532,7 +5533,54 @@ input, textarea {
   font-size: 2rem;
 }
 
-@media (min-width: 360px) and (orientation: portrait) {
+.social {
+  position: absolute;
+  right: 28px;
+  bottom: 3rem;
+}
+
+.social--codepen {
+  cursor: pointer;
+  background-image: url(../../assets/codepen-s.svg);
+  width: 3rem;
+  height: 3rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.social--codepen:hover {
+  background-image: url(../../assets/codepen-s-hover.svg);
+}
+
+.social--github {
+  margin-top: 2rem;
+  cursor: pointer;
+  background-image: url(../../assets/github-s.svg);
+  width: 3rem;
+  height: 3rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.social--github:hover {
+  background-image: url(../../assets/github-s-hover.svg);
+}
+
+.social--linkedin {
+  margin-top: 2rem;
+  cursor: pointer;
+  background-image: url(../../assets/linkedin-s.svg);
+  width: 3rem;
+  height: 3rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+}
+
+.social--linkedin:hover {
+  background-image: url(../../assets/linkedin-s-hover.svg);
+}
+
+@media (min-width: 360px) and (max-width: 500px) and (orientation: portrait) {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right -40px;
@@ -5541,6 +5589,8 @@ input, textarea {
     -webkit-box-pack: start;
         -ms-flex-pack: start;
             justify-content: start;
+    -webkit-filter: contrast(85%);
+            filter: contrast(85%);
   }
   .nav__icon {
     margin: 4rem;
@@ -5552,21 +5602,26 @@ input, textarea {
   .profile__text {
     font-size: 2rem;
     text-align: left;
-    width: 165px;
+    width: 175px;
     margin: 0 0 0 2rem;
   }
   .more {
     margin: auto auto 3rem auto;
     font-size: 2rem;
   }
+  .social {
+    right: 42px;
+  }
 }
 
-@media (min-width: 500px) and (orientation: landscape) {
+@media (min-width: 800px) and (orientation: landscape) {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto 150%;
+    -webkit-filter: contrast(85%);
+            filter: contrast(85%);
   }
   .nav__icon {
     margin: 5rem;
@@ -5582,6 +5637,9 @@ input, textarea {
   }
   .profile__text {
     width: 276px;
+  }
+  .social {
+    right: 42px;
   }
 }
 
@@ -5591,6 +5649,8 @@ input, textarea {
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto 150%;
+    -webkit-filter: contrast(85%);
+            filter: contrast(85%);
   }
   .nav__icon {
     margin: 5rem;
@@ -5606,6 +5666,9 @@ input, textarea {
   }
   .profile__text {
     width: 276px;
+  }
+  .social {
+    right: 42px;
   }
   .profile__title {
     font-size: 5rem;
@@ -5637,6 +5700,36 @@ input, textarea {
   .more__icon {
     font-size: 3rem;
   }
+  .social {
+    right: 56px;
+    bottom: 4rem;
+  }
+  .social--codepen {
+    background-image: url(../../assets/codepen-m.svg);
+    width: 6rem;
+    height: 6rem;
+  }
+  .social--codepen:hover {
+    background-image: url(../../assets/codepen-m-hover.svg);
+  }
+  .social--github {
+    margin-top: 3rem;
+    background-image: url(../../assets/github-m.svg);
+    width: 6rem;
+    height: 6rem;
+  }
+  .social--github:hover {
+    background-image: url(../../assets/github-m-hover.svg);
+  }
+  .social--linkedin {
+    margin-top: 3rem;
+    background-image: url(../../assets/linkedin-m.svg);
+    width: 6rem;
+    height: 6rem;
+  }
+  .social--linkedin:hover {
+    background-image: url(../../assets/linkedin-m-hover.svg);
+  }
 }
 
 @media (min-width: 1920px) and (orientation: landscape) {
@@ -5645,6 +5738,8 @@ input, textarea {
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto 150%;
+    -webkit-filter: contrast(85%);
+            filter: contrast(85%);
   }
   .nav__icon {
     margin: 5rem;
@@ -5661,13 +5756,16 @@ input, textarea {
   .profile__text {
     width: 276px;
   }
+  .social {
+    right: 42px;
+  }
   .profile__title {
-    font-size: 7rem;
+    font-size: 5rem;
   }
   .profile__text {
-    font-size: 5rem;
-    line-height: 5rem;
-    width: 991px;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 415px;
   }
   .nav__icon--burger {
     background-image: url(../../assets/menu-m.svg);
@@ -5684,6 +5782,50 @@ input, textarea {
   }
   .nav__icon--close:hover {
     background-image: url(../../assets/close-m-hover.svg);
+  }
+  .more h2 {
+    font-size: 3rem;
+  }
+  .more__icon {
+    font-size: 3rem;
+  }
+  .social {
+    right: 56px;
+    bottom: 4rem;
+  }
+  .social--codepen {
+    background-image: url(../../assets/codepen-m.svg);
+    width: 6rem;
+    height: 6rem;
+  }
+  .social--codepen:hover {
+    background-image: url(../../assets/codepen-m-hover.svg);
+  }
+  .social--github {
+    margin-top: 3rem;
+    background-image: url(../../assets/github-m.svg);
+    width: 6rem;
+    height: 6rem;
+  }
+  .social--github:hover {
+    background-image: url(../../assets/github-m-hover.svg);
+  }
+  .social--linkedin {
+    margin-top: 3rem;
+    background-image: url(../../assets/linkedin-m.svg);
+    width: 6rem;
+    height: 6rem;
+  }
+  .social--linkedin:hover {
+    background-image: url(../../assets/linkedin-m-hover.svg);
+  }
+  .profile__title {
+    font-size: 7rem;
+  }
+  .profile__text {
+    font-size: 5rem;
+    line-height: 5rem;
+    width: 991px;
   }
   .more h2 {
     font-size: 5rem;
