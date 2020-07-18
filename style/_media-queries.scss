@@ -1,58 +1,22 @@
-// Definition of the desktop media queries
-
-
-
-// Definition of the mobile media queries
-@mixin for-iphone-8 {
-  @media (max-width: 380px) {
+// Mobile specific media queries (iphone / ipad sizes)
+@mixin for-iphone {
+  @media (min-width: 360px) and (orientation: portrait) {
     @content;
   }
 }
-
-@mixin for-iphone-se {
-  @media (max-height: 450px), (max-width: 360px) {
+@mixin for-ipad {
+  @media (min-width: 500px) and (orientation: landscape) {
+    @content; 
+  }
+}
+// Desktop specific media queries (720p and 1080p sizes)
+@mixin for-desktop-hd {
+  @media (min-width: 1280px) and (orientation: landscape) {
     @content;
   }
 }
-
-// Default header size on smaller devices
-@include for-iphone-se {
-  h1 {
-    font-size: 1.5rem;
-  }
-}
-
-// -------------------------------------------------------------- //
-
-// Mobile specific
-@mixin for-iphone-x {
-  @media (min-width: 370px) and (max-width: 500px) and (max-height: 750px) {
+@mixin for-desktop-full-hd {
+  @media (min-width: 1920px) and (orientation: landscape) {
     @content;
   }
 }
-
-// Tablet specific
-@mixin for-ipad-s {
-  @media (min-width: 950px) and (max-width: 1030px) and (max-height: 780px) {
-    @content;
-  }
-}
-
-@mixin for-ipad-m {
-  @media (min-width: 1030px) and (max-width: 1120px) and (max-height: 840px) {
-    @content;
-  }
-}
-
-@mixin for-ipad-l {
-  @media (min-width: 1120px) and (max-width: 1920px) and (max-height: 1030px) {
-    @content;
-  }
-}
-
-// // Desktop specific
-// @mixin for-720p {
-//   @media (min-width: 490) and (max-width: 1290) {
-//     @content;
-//   }
-// }

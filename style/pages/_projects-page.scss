@@ -113,17 +113,3 @@
   background-size: cover;
   height: 200px;
 }
-
-// Devices smaller than iPhone SE
-@include for-iphone-8 {
-  .projects-page {
-    padding: $size-3 $size-1 $size-1 $size-1;
-  }
-  .my-card__body {
-    padding: $size-2;
-  }
-  .my-card__subtitle,
-  .my-card__text {
-    margin-bottom: $size-2;
-  }
-}

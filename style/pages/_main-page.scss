@@ -99,7 +99,7 @@
   font-size: $size-2;
 }
 
-@include for-iphone-x {
+@include for-iphone {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right -40px;
@@ -126,7 +126,7 @@
   }
 }
 
-@mixin ipad-base {
+@mixin desktop-default {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right;
@@ -136,6 +136,39 @@
 
   .nav__icon {
     margin: $size-5;
+  }
+
+  .nav__item {
+    margin-bottom: $size-8;
+    font-size: $size-8;
+  }
+
+  .profile {
+    width: auto;
+    padding: 0;
+    margin: 0 auto 0 15%;
+  }
+
+  .profile__text {
+    width: 276px;
+  }
+}
+
+@include for-ipad {
+  @include desktop-default;
+}
+
+@include for-desktop-hd {
+  @include desktop-default;
+
+  .profile__title {
+    font-size: $size-5;
+  }
+
+  .profile__text {
+    font-size: $size-3;
+    line-height: $size-3;
+    width: 415px;
   }
 
   .nav__icon--burger {
@@ -156,39 +189,6 @@
     }
   }
 
-  .nav__item {
-    margin-bottom: $size-8;
-    font-size: $size-8;
-  }
-
-  .profile {
-    width: auto;
-    padding: 0;
-    margin: 0 auto 0 $size-14;
-  }
-
-  .profile__text {
-    width: 276px;
-  }
-}
-
-@include for-ipad-s {
-  @include ipad-base;
-}
-
-@include for-ipad-m {
-  @include ipad-base;
-
-  .profile__title {
-    font-size: $size-5;
-  }
-
-  .profile__text {
-    font-size: $size-3;
-    line-height: $size-3;
-    width: 415px;
-  }
-
   .more {
     h2 {
       font-size: $size-3;
@@ -200,26 +200,44 @@
   }
 }
 
-@include for-ipad-l {
-  @include ipad-base;
+@include for-desktop-full-hd {
+  @include desktop-default;
 
   .profile__title {
     font-size: $size-7;
   }
 
   .profile__text {
-    font-size: $size-4;
-    line-height: $size-4;
-    width: 590px;
+    font-size: $size-5;
+    line-height: $size-5;
+    width: 991px;
+  }
+
+  .nav__icon--burger {
+    background-image: url(../../assets/menu-m.svg);
+    width: $size-8;
+    height: $size-8;
+    &:hover {
+      background-image: url(../../assets/menu-m-hover.svg);
+    }
+  }
+
+  .nav__icon--close {
+    background-image: url(../../assets/close-m.svg);
+    width: $size-8;
+    height: $size-8;
+    &:hover {
+      background-image: url(../../assets/close-m-hover.svg);
+    }
   }
 
   .more {
     h2 {
-      font-size: $size-4;
+      font-size: $size-5;
     }
   }
 
   .more__icon {
-    font-size: $size-4;
+    font-size: $size-5;
   }
 }
