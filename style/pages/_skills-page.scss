@@ -51,14 +51,3 @@
   margin: 4px auto;
   width: $size-5;
 }
-
-@include for-iphone-se {
-  .skills-page__icon--html,
-  .skills-page__icon--css,
-  .skills-page__icon--js,
-  .skills-page__icon--vue {
-    background-size: 40px;
-    height: 40px;
-    width: 40px;
-  }
-}

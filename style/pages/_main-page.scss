@@ -1,89 +1,39 @@
-@import "../media-queries";
-
 .main-page-bg {
-  background: $clr-2;
+  background: #232323;
 }
 
 .main-page {
-  background-image: url(../../assets/portrait.png);
-  background-position: top -150px right -40px;
-  background-repeat: no-repeat;
   color: $white;
   height: 100vh;
-  filter: contrast(85%);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
 
 .nav__icon {
   cursor: pointer;
-  height: $size-3;
   margin: $size-3;
-  width: $size-3;
   z-index: 200;
-  &:hover,
-  &:active {
-    .nav__icon--burger {
-      background: $clr-0;
-      &::after,
-      &::before {
-        background: $clr-0;
-      }
-    }
-  }
-  &:hover,
-  &:active {
-    .nav__icon--close {
-      background: $clr-0;
-      &::after {
-        background: $clr-0;
-      }
-    }
-  }
 }
 
 .nav__icon--burger {
-  background: $white;
-  height: 0.2em;
-  position: relative;
-  top: 14px;
+  background-image: url(../../assets/menu-s.svg);
+  width: $size-4;
+  height: $size-4;
   transition: $transition;
-  width: $size-3;
-  &::before {
-    background: $white;
-    content: "";
-    height: 0.2em;
-    position: absolute;
-    top: 8px;
-    transition: $transition;
-    width: 2em;
-  }
-  &::after {
-    background: $white;
-    content: "";
-    height: 0.2em;
-    position: absolute;
-    top: -8px;
-    transition: $transition;
-    width: 2em;
+  &:hover {
+    background-image: url(../../assets/menu-s-hover.svg);
   }
 }
 
 .nav__icon--close {
-  background: $white;
   display: none;
-  height: $size-3;
-  margin-left: 14px;
-  position: relative;
-  transform: rotate(135deg);
+  background-image: url(../../assets/close-s.svg);
+  width: $size-4;
+  height: $size-4;
   transition: $transition;
-  width: 0.2em;
-  &::after {
-    background: $white;
-    content: "";
-    height: 2em;
-    position: absolute;
-    transform: rotate(90deg);
-    transition: $transition;
-    width: 0.2em;
+  &:hover {
+    background-image: url(../../assets/close-s-hover.svg);
   }
 }
 
@@ -102,6 +52,7 @@
 
 .nav__item {
   margin-bottom: $size-2;
+  font-size: $size-4;
   &:last-child {
     margin-bottom: 0;
   }
@@ -112,25 +63,26 @@
   }
 }
 
+.profile {
+  padding: 0 $size-2;
+}
+
 .profile__title {
-  margin: 0 auto;
-  padding: 0 $size-3 $size-2 $size-3;
-  width: 360px;
   color: $clr-0;
+  font-size: $size-4;
+  text-align: center;
+  margin-bottom: $size-2;
 }
 
 .profile__text {
-  padding: 0 $typo-3;
-  width: 230px;
+  font-size: $size-2;
+  text-align: center;
+  margin: 0 auto;
 }
 
 .more {
-  bottom: 0;
-  left: calc(50% - 50px);
-  margin: 0 0 $size-3 0;
-  position: absolute;
-  text-align: center;
-  width: 100px;
+  margin: $size-3 auto;
+  font-size: $size-2;
   &:hover,
   &:active {
     cursor: pointer;
@@ -143,38 +95,149 @@
 }
 
 .more__icon {
-  font-size: $typo-3;
   transition: $transition;
+  font-size: $size-2;
 }
 
-// iPad side window
-@media (max-width: 400px) and (min-height: 880px) {
+@include for-iphone {
   .main-page {
-    background-position: bottom 0 right -20px;
+    background-image: url(../../assets/portrait.png);
+    background-position: bottom right -40px;
+    background-repeat: no-repeat;
+    background-size: auto 120%;
+    justify-content: start;
   }
-  .profile__text {
-    text-align: center;
-    width: auto;
-  }
-}
-
-// Devices smaller than iPhone SE
-@include for-iphone-se {
-  .main-page {
-    background: $secondary;
-    display: flex;
-    flex-flow: column;
-    justify-content: space-between;
+  .nav__icon {
+    margin: $size-4;
   }
   .profile__title {
-    font-size: 25px;
-    width: auto;
+    width: 228px;
+    margin: 0 auto $size-4 auto;
   }
   .profile__text {
-    text-align: center;
-    width: auto;
+    font-size: $size-2;
+    text-align: left;
+    width: 165px;
+    margin: 0 0 0 $size-2;
   }
   .more {
-    position: relative;
+    margin: auto auto $size-3 auto;
+    font-size: $size-2;
+  }
+}
+
+@mixin desktop-default {
+  .main-page {
+    background-image: url(../../assets/portrait.png);
+    background-position: bottom right;
+    background-repeat: no-repeat;
+    background-size: auto 150%;
+  }
+
+  .nav__icon {
+    margin: $size-5;
+  }
+
+  .nav__item {
+    margin-bottom: $size-8;
+    font-size: $size-8;
+  }
+
+  .profile {
+    width: auto;
+    padding: 0;
+    margin: 0 auto 0 15%;
+  }
+
+  .profile__text {
+    width: 276px;
+  }
+}
+
+@include for-ipad {
+  @include desktop-default;
+}
+
+@include for-desktop-hd {
+  @include desktop-default;
+
+  .profile__title {
+    font-size: $size-5;
+  }
+
+  .profile__text {
+    font-size: $size-3;
+    line-height: $size-3;
+    width: 415px;
+  }
+
+  .nav__icon--burger {
+    background-image: url(../../assets/menu-m.svg);
+    width: $size-8;
+    height: $size-8;
+    &:hover {
+      background-image: url(../../assets/menu-m-hover.svg);
+    }
+  }
+
+  .nav__icon--close {
+    background-image: url(../../assets/close-m.svg);
+    width: $size-8;
+    height: $size-8;
+    &:hover {
+      background-image: url(../../assets/close-m-hover.svg);
+    }
+  }
+
+  .more {
+    h2 {
+      font-size: $size-3;
+    }
+  }
+
+  .more__icon {
+    font-size: $size-3;
+  }
+}
+
+@include for-desktop-full-hd {
+  @include desktop-default;
+
+  .profile__title {
+    font-size: $size-7;
+  }
+
+  .profile__text {
+    font-size: $size-5;
+    line-height: $size-5;
+    width: 991px;
+  }
+
+  .nav__icon--burger {
+    background-image: url(../../assets/menu-m.svg);
+    width: $size-8;
+    height: $size-8;
+    &:hover {
+      background-image: url(../../assets/menu-m-hover.svg);
+    }
+  }
+
+  .nav__icon--close {
+    background-image: url(../../assets/close-m.svg);
+    width: $size-8;
+    height: $size-8;
+    &:hover {
+      background-image: url(../../assets/close-m-hover.svg);
+    }
+  }
+
+  .more {
+    h2 {
+      font-size: $size-5;
+    }
+  }
+
+  .more__icon {
+    font-size: $size-5;
   }
 }
