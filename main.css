@@ -5412,7 +5412,7 @@ input, textarea {
 }
 
 .main-page-bg {
-  background: #232323;
+  background: #313030;
 }
 
 .main-page {
@@ -5531,6 +5531,11 @@ input, textarea {
   -webkit-transition: 0.4s;
   transition: 0.4s;
   font-size: 2rem;
+  text-align: center;
+}
+
+.more__text {
+  margin-bottom: -10px;
 }
 
 .social {
@@ -5820,12 +5825,13 @@ input, textarea {
     background-image: url(../../assets/linkedin-m-hover.svg);
   }
   .profile__title {
-    font-size: 7rem;
+    font-size: 8rem;
+    margin-bottom: 4rem;
   }
   .profile__text {
     font-size: 5rem;
     line-height: 5rem;
-    width: 991px;
+    width: 560px;
   }
   .more h2 {
     font-size: 5rem;

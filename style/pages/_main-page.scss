@@ -1,5 +1,5 @@
 .main-page-bg {
-  background: #232323;
+  background: #313030;
 }
 
 .main-page {
@@ -92,6 +92,10 @@
   &__icon {
     transition: $transition;
     font-size: $size-2;
+    text-align: center;
+  }
+  &__text {
+    margin-bottom: -10px;
   }
 }
 
@@ -278,12 +282,13 @@
   @include desktop;
   .profile {
     &__title {
-      font-size: $size-7;
+      font-size: $size-8;
+      margin-bottom: $size-4;
     }
     &__text {
       font-size: $size-5;
       line-height: $size-5;
-      width: 991px;
+      width: 560px;
     }
   }
   .more {
