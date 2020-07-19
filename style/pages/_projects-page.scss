@@ -8,108 +8,177 @@
   display: flex;
   flex-direction: column;
   padding: $size-3 $size-3 $size-2 $size-3;
-}
-
-.projects-page__title {
-  color: $clr-0;
-  margin-bottom: $size-1;
-} 
-
-.projects-page__subtitle {
-  margin-bottom: $size-3;
+  &__title {
+    color: $clr-0;
+    margin-bottom: $size-1;
+  }
+  &__subtitle {
+    margin-bottom: $size-3;
+  }
 }
 
 .my-card {
   color: $white;
-}
-
-.my-card__selection {
-  display: flex;
-  justify-content: space-between;
-}
-
-.my-card__first,
-.my-card__second,
-.my-card__third {
-  background: $clr-2;
-  color: $white;
-  border-radius: 5px 5px 0 0;
-  cursor: pointer;
-  padding: $size-1;
-  text-align: center;
-  width: 31.5%;
-  &:hover,
-  &:active {
-    color: $clr-0;
+  &__selection {
+    display: flex;
+    justify-content: space-between;
   }
-  h2 {
-    transition: $transition;
+  &__first,
+  &__second,
+  &__third {
+    background: $clr-2;
+    border-radius: 5px 5px 0 0;
+    color: $white;
+    cursor: pointer;
+    padding: $size-1;
+    text-align: center;
+    width: 31.5%;
+    &:hover,
+    &:active {
+      color: $clr-0;
+    }
+    h2 {
+      transition: $transition;
+    }
   }
-}
-
-.my-card--active {
-  background: $clr-3;
-  color: $white;
-  cursor: default;
-  &:hover,
-  &:active {
+  &--active {
     background: $clr-3;
     color: $white;
+    cursor: default;
+    &:hover,
+    &:active {
+      background: $clr-3;
+      color: $white;
+    }
   }
-}
-
-.my-card__body {
-  background: $clr-3;
-  display: flow-root;
-  padding: $size-3;
-}
-
-.my-card__title {
-  color: $clr-0;
-}
-
-.my-card__subtitle {
-  margin-bottom: $size-3;
-  color: $clr-0;
-}
-
-.my-card__text {
-  margin-bottom: $size-3;
-}
-
-.my-card__button,
-.projects-page__button {
-  background: $clr-0;
-  color: $clr-1;;
-  border: none;
-  border-radius: 5px;
-  float: right;
-  padding: $size-1 $size-2;
-  transition: $transition;
-  width: auto;
-  &:hover,
-  &:active {
-    background: $white;
-    color: $clr-2;
+  &__body {
+    background: $clr-3;
+    display: flow-root;
+    padding: $size-3;
+  }
+  &__title {
+    color: $clr-0;
+  }
+  &__subtitle {
+    color: $clr-0;
+    margin-bottom: $size-3;
+  }
+  &__text {
+    margin-bottom: $size-3;
+  }
+  &__button,
+  .projects-page__button {
+    @include my-button;
+  }
+  &__img {
+    background-position: center center;
+    border-radius: 0 0 5px 5px;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
   }
 }
 
 .projects-page__button {
-  background: $clr-0;
-  color: $clr-1;
-  float: none;
-  margin: $size-2 auto $size-1 auto;
-  &:hover,
-  &:active {
-    background: $white;
-    color: $clr-1;
-  }
+  @include my-button;
+  margin: $size-2 auto 0 auto;
 }
 
-.my-card__img {
-  background-position: center center;
-  border-radius: 0 0 5px 5px;
-  background-repeat: no-repeat;
-  background-size: cover;
-  height: 200px;
+//------------------------ Media queries ------------------------//
+
+@include for-ipad {
+  .projects-page {
+    padding: $size-4  ;
+    &__title {
+      font-size: $size-4;
+    }
+    &__subtitle {
+      font-size: $size-3;
+    }
+  }
+
+  .my-card {
+    display: flex;
+    height: 60vh;
+    margin: 0 auto;
+    width: 90%;
+    &__selection {
+      display: flex;
+      flex-direction: column;
+    }
+    &__first,
+    &__second,
+    &__third {
+      background: $clr-2;
+      border-radius: 5px 0 0 5px;
+      color: $white;
+      cursor: pointer;
+      display: flex;
+      justify-content: center;
+      padding: $size-2;
+      height: 28%;
+      width: 50px;
+      h2 {
+        align-self: center;
+        font-size: $size-3;
+      }
+      &:hover,
+      &:active {
+        color: $clr-0;
+      }
+      h2 {
+        transition: $transition;
+      }
+    }
+    &--active {
+      background: $clr-3;
+      color: $white;
+      cursor: default;
+      &:hover,
+      &:active {
+        background: $clr-3;
+        color: $white;
+      }
+    }
+    &__body {
+      background: $clr-3;
+      display: flex;
+      flex-direction: column;
+      padding: $size-6;
+    }
+    &__title {
+      color: $clr-0;
+      font-size: $size-4;
+    }
+    &__subtitle {
+      color: $clr-0;
+      margin-bottom: $size-3;
+    }
+    &__text {
+      font-size: $size-3;
+      line-height: $size-3;
+      margin-bottom: $size-3;
+    }
+    &__button,
+    .projects-page__button {
+      @include my-button;
+      margin: auto auto 0 auto;
+      h2 {
+        font-size: $size-3;
+      }
+    }
+    &__img {
+      background-position: center center;
+      background-repeat: no-repeat;
+      background-size: cover;
+      border-radius: 0 5px 5px 0;
+      height: auto;
+      width: 150%;
+    }
+  }
+  .projects-page__button {
+    h2 {
+      font-size: $size-3;
+    }
+  }
 }
