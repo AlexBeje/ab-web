@@ -5619,7 +5619,7 @@ input, textarea {
   }
 }
 
-@media (min-width: 800px) and (orientation: landscape) {
+@media (min-width: 750px) and (orientation: landscape) {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right;
@@ -5641,7 +5641,9 @@ input, textarea {
     margin: 0 auto 0 15%;
   }
   .profile__text {
-    width: 276px;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 335px;
   }
   .social {
     right: 42px;
@@ -5670,18 +5672,24 @@ input, textarea {
     margin: 0 auto 0 15%;
   }
   .profile__text {
-    width: 276px;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 335px;
   }
   .social {
     right: 42px;
   }
+  .profile {
+    margin: 0 auto 0 10%;
+  }
   .profile__title {
-    font-size: 5rem;
+    font-size: 6rem;
+    margin-bottom: 4rem;
   }
   .profile__text {
-    font-size: 3rem;
-    line-height: 3rem;
-    width: 415px;
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 445px;
   }
   .nav__icon--burger {
     background-image: url(../../assets/menu-m.svg);
@@ -5759,18 +5767,24 @@ input, textarea {
     margin: 0 auto 0 15%;
   }
   .profile__text {
-    width: 276px;
+    font-size: 3rem;
+    line-height: 3rem;
+    width: 335px;
   }
   .social {
     right: 42px;
   }
+  .profile {
+    margin: 0 auto 0 10%;
+  }
   .profile__title {
-    font-size: 5rem;
+    font-size: 6rem;
+    margin-bottom: 4rem;
   }
   .profile__text {
-    font-size: 3rem;
-    line-height: 3rem;
-    width: 415px;
+    font-size: 4rem;
+    line-height: 4rem;
+    width: 445px;
   }
   .nav__icon--burger {
     background-image: url(../../assets/menu-m.svg);
@@ -5823,6 +5837,9 @@ input, textarea {
   }
   .social--linkedin:hover {
     background-image: url(../../assets/linkedin-m-hover.svg);
+  }
+  .profile {
+    margin: 0 auto 0 15%;
   }
   .profile__title {
     font-size: 8rem;
@@ -5880,29 +5897,21 @@ input, textarea {
           justify-content: space-between;
 }
 
-.my-card__first,
-.my-card__second,
-.my-card__third {
+.my-card__first, .my-card__second, .my-card__third {
   background: #262626;
-  color: #fff;
   border-radius: 5px 5px 0 0;
+  color: #fff;
   cursor: pointer;
   padding: 1rem;
   text-align: center;
   width: 31.5%;
 }
 
-.my-card__first:hover, .my-card__first:active,
-.my-card__second:hover,
-.my-card__second:active,
-.my-card__third:hover,
-.my-card__third:active {
+.my-card__first:hover, .my-card__first:active, .my-card__second:hover, .my-card__second:active, .my-card__third:hover, .my-card__third:active {
   color: #1AC5FF;
 }
 
-.my-card__first h2,
-.my-card__second h2,
-.my-card__third h2 {
+.my-card__first h2, .my-card__second h2, .my-card__third h2 {
   -webkit-transition: 0.4s;
   transition: 0.4s;
 }
@@ -5929,8 +5938,8 @@ input, textarea {
 }
 
 .my-card__subtitle {
-  margin-bottom: 3rem;
   color: #1AC5FF;
+  margin-bottom: 3rem;
 }
 
 .my-card__text {
@@ -5938,12 +5947,11 @@ input, textarea {
 }
 
 .my-card__button,
-.projects-page__button {
+.my-card .projects-page__button {
   background: #1AC5FF;
   color: #1F1F1F;
   border: none;
   border-radius: 5px;
-  float: right;
   padding: 1rem 2rem;
   -webkit-transition: 0.4s;
   transition: 0.4s;
@@ -5951,22 +5959,10 @@ input, textarea {
 }
 
 .my-card__button:hover, .my-card__button:active,
-.projects-page__button:hover,
-.projects-page__button:active {
+.my-card .projects-page__button:hover,
+.my-card .projects-page__button:active {
   background: #fff;
   color: #262626;
-}
-
-.projects-page__button {
-  background: #1AC5FF;
-  color: #1F1F1F;
-  float: none;
-  margin: 2rem auto 1rem auto;
-}
-
-.projects-page__button:hover, .projects-page__button:active {
-  background: #fff;
-  color: #1F1F1F;
 }
 
 .my-card__img {
@@ -5975,6 +5971,146 @@ input, textarea {
   background-repeat: no-repeat;
   background-size: cover;
   height: 200px;
+}
+
+.projects-page__button {
+  background: #1AC5FF;
+  color: #1F1F1F;
+  border: none;
+  border-radius: 5px;
+  padding: 1rem 2rem;
+  -webkit-transition: 0.4s;
+  transition: 0.4s;
+  width: auto;
+  margin: 2rem auto 0 auto;
+}
+
+.projects-page__button:hover, .projects-page__button:active {
+  background: #fff;
+  color: #262626;
+}
+
+@media (min-width: 750px) and (orientation: landscape) {
+  .projects-page {
+    padding: 4rem;
+  }
+  .projects-page__title {
+    font-size: 4rem;
+  }
+  .projects-page__subtitle {
+    font-size: 3rem;
+  }
+  .my-card {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    height: 60vh;
+    margin: 0 auto;
+    width: 90%;
+  }
+  .my-card__selection {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .my-card__first, .my-card__second, .my-card__third {
+    background: #262626;
+    border-radius: 5px 0 0 5px;
+    color: #fff;
+    cursor: pointer;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+    padding: 2rem;
+    height: 28%;
+    width: 50px;
+  }
+  .my-card__first h2, .my-card__second h2, .my-card__third h2 {
+    -ms-flex-item-align: center;
+        -ms-grid-row-align: center;
+        align-self: center;
+    font-size: 3rem;
+  }
+  .my-card__first:hover, .my-card__first:active, .my-card__second:hover, .my-card__second:active, .my-card__third:hover, .my-card__third:active {
+    color: #1AC5FF;
+  }
+  .my-card__first h2, .my-card__second h2, .my-card__third h2 {
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+  }
+  .my-card--active {
+    background: #2E2E2E;
+    color: #fff;
+    cursor: default;
+  }
+  .my-card--active:hover, .my-card--active:active {
+    background: #2E2E2E;
+    color: #fff;
+  }
+  .my-card__body {
+    background: #2E2E2E;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    padding: 6rem;
+  }
+  .my-card__title {
+    color: #1AC5FF;
+    font-size: 4rem;
+  }
+  .my-card__subtitle {
+    color: #1AC5FF;
+    margin-bottom: 3rem;
+  }
+  .my-card__text {
+    font-size: 3rem;
+    line-height: 3rem;
+    margin-bottom: 3rem;
+  }
+  .my-card__button,
+  .my-card .projects-page__button {
+    background: #1AC5FF;
+    color: #1F1F1F;
+    border: none;
+    border-radius: 5px;
+    padding: 1rem 2rem;
+    -webkit-transition: 0.4s;
+    transition: 0.4s;
+    width: auto;
+    margin: auto auto 0 auto;
+  }
+  .my-card__button:hover, .my-card__button:active,
+  .my-card .projects-page__button:hover,
+  .my-card .projects-page__button:active {
+    background: #fff;
+    color: #262626;
+  }
+  .my-card__button h2,
+  .my-card .projects-page__button h2 {
+    font-size: 3rem;
+  }
+  .my-card__img {
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    border-radius: 0 5px 5px 0;
+    height: auto;
+    width: 150%;
+  }
+  .projects-page__button h2 {
+    font-size: 3rem;
+  }
 }
 
 .skills-page-bg {

@@ -192,7 +192,9 @@
     padding: 0;
     margin: 0 auto 0 15%;
     &__text {
-      width: 276px;
+      font-size: $size-3;
+      line-height: $size-3;
+      width: 335px;
     }
   }
   .social {
@@ -207,13 +209,15 @@
 @mixin desktop {
   @include ipad;
   .profile {
+    margin: 0 auto 0 10%;
     &__title {
-      font-size: $size-5;
+      font-size: $size-6;
+      margin-bottom: $size-4;
     }
     &__text {
-      font-size: $size-3;
-      line-height: $size-3;
-      width: 415px;
+      font-size: $size-4;
+      line-height: $size-4;
+      width: 445px;
     }
   }
   .nav__icon {
@@ -281,6 +285,7 @@
 @include for-desktop-full-hd {
   @include desktop;
   .profile {
+    margin: 0 auto 0 15%;
     &__title {
       font-size: $size-8;
       margin-bottom: $size-4;
