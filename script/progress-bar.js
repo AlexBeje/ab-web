@@ -7,6 +7,6 @@ function getScrollPercent() {
   progressBar.style.width = scrolled + "%";
 }
 
-body.onscroll = function () {
+window.onscroll = function () {
   getScrollPercent();
 };
