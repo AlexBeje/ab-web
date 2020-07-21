@@ -7,7 +7,7 @@
   background-color: $clr-1;
   display: flex;
   flex-direction: column;
-  padding: $size-3 $size-3 $size-2 $size-3;
+  padding: $size-3 $size-2;
   &__title {
     color: $clr-0;
     margin-bottom: $size-1;
@@ -15,6 +15,12 @@
   &__subtitle {
     margin-bottom: $size-3;
   }
+}
+
+#my-card-1,
+#my-card-2,
+#my-card-3 {
+  display: none;
 }
 
 .my-card {
@@ -66,15 +72,15 @@
   &__text {
     margin-bottom: $size-3;
   }
-  &__button,
-  .projects-page__button {
+  &__button {
     @include my-button;
+    float: right;
   }
   &__img {
     background-position: center center;
-    border-radius: 0 0 5px 5px;
     background-repeat: no-repeat;
     background-size: cover;
+    border-radius: 0 0 5px 5px;
     height: 200px;
   }
 }
@@ -88,7 +94,7 @@
 
 @include for-ipad {
   .projects-page {
-    padding: $size-4  ;
+    padding: $size-4 0;
     &__title {
       font-size: $size-4;
     }
@@ -96,7 +102,6 @@
       font-size: $size-3;
     }
   }
-
   .my-card {
     display: flex;
     height: 60vh;
@@ -179,6 +184,87 @@
   .projects-page__button {
     h2 {
       font-size: $size-3;
+    }
+  }
+}
+
+
+@mixin desktop {
+  .projects-page {
+    padding: $size-7 0;
+    &__title {
+      font-size: $size-6;
+      margin-bottom: $size-3;
+    }
+    &__subtitle {
+      font-size: $size-4;
+    }
+  }
+  #my-card-0 {
+    display: none;
+  }
+  #my-card-1,
+  #my-card-2,
+  #my-card-3 {
+    display: block;
+  }
+  .my-cards {
+    display: flex;
+  }
+  .my-card + .my-card {
+    margin-left: $size-3;
+  }
+  .my-card {
+    &__selection {
+      display: none;
+    }
+    &__body {
+      padding: $size-5;
+    }
+    &__title {
+      font-size: $size-4;
+    }
+    &__text {
+      font-size: $size-3;
+      height: 150px;
+      line-height: $size-3;
+    }
+  }
+  .projects-page__button {
+    h2 {
+      font-size: $size-3;
+      line-height: $size-5;
+    }
+  }
+}
+
+@include for-desktop-hd {
+  @include desktop;
+}
+
+@include for-desktop-full-hd {
+  @include desktop;
+  .projects-page {
+    &__title {
+      font-size: $size-7;
+      margin-bottom: $size-4;
+    }
+    &__subtitle {
+      font-size: $size-5;
+      margin-bottom: $size-5;
+    }
+  }
+  .my-card + .my-card {
+    margin-left: $size-4;
+  }
+  .my-card {
+    &__text {
+      font-size: $size-4;
+      height: 250px;
+      line-height: $size-4;
+    }
+    &__img {
+      height: 300px;
     }
   }
 }
