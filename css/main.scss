@@ -4,7 +4,7 @@ html {
 
 // Bootstrap
 // ∟ Style before appling bootstrap
-@import "./style/reset-before";
+@import "./reset-before";
 // ∟ Required
 @import "./node_modules/bootstrap/scss/functions";
 @import "./node_modules/bootstrap/scss/variables";
@@ -45,16 +45,16 @@ html {
 // @import "./node_modules/bootstrap/scss/type";
 @import "./node_modules/bootstrap/scss/utilities";
 // ∟ Style after appling bootstrap
-@import "./style/reset-after";
+@import "./reset-after";
 
 // Utilities
-@import "./style/eight-point-grid-system";
-@import "./style/media-queries";
-@import "./style/addons";
-@import "./style/typography";
+@import "./eight-point-grid-system";
+@import "./media-queries";
+@import "./addons";
+@import "./typography";
 
 // Pages
-@import "./style/pages/main-page";
-@import "./style/pages/projects-page";
-@import "./style/pages/skills-page";
-@import "./style/pages/contact-page";
+@import "./pages/main-page";
+@import "./pages/projects-page";
+@import "./pages/skills-page";
+@import "./pages/contact-page";

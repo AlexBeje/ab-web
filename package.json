@@ -5,7 +5,8 @@
   "main": "index.js",
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1",
-    "build": "rollup -c"
+    "build": "rollup -c",
+    "watch": "rollup -c -w"
   },
   "repository": {
     "type": "git",
@@ -23,6 +24,7 @@
   "devDependencies": {
     "rollup": "^2.22.1",
     "rollup-plugin-scss": "^2.5.0",
+    "rollup-plugin-terser": "^6.1.0",
     "sass": "^1.26.10"
   }
 }
