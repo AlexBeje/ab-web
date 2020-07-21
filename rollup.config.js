@@ -2,12 +2,11 @@ import scss from "rollup-plugin-scss";
 import { terser } from "rollup-plugin-terser";
 
 export default {
-  input: "script/main.js",
+  input: "js/main.js",
   output: {
     file: "build/js/main.min.js",
     format: "esm",
   },
-  treeshake: false,
   plugins: [
     scss({
       output: "./build/css/main.css",
@@ -17,4 +16,5 @@ export default {
     }),
     terser(),
   ],
+  treeshake: false,
 };
