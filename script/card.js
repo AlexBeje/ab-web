@@ -1,30 +1,15 @@
+const cardTitle = document.querySelector("#my-card-0 .my-card__title");
+const cardSubtitle = document.querySelector("#my-card-0 .my-card__subtitle");
+const cardText = document.querySelector("#my-card-0 .my-card__text");
+const cardImg = document.querySelector("#my-card-0 .my-card__img");
+const cardButton = document.querySelector("#my-card-0 .my-card__button");
+
 const firstCard = document.querySelector(".my-card__first");
 const secondCard = document.querySelector(".my-card__second");
 const thirdCard = document.querySelector(".my-card__third");
 
-const cardTitle0 = document.querySelector("#my-card-0 .my-card__title");
-const cardSubtitle0 = document.querySelector("#my-card-0 .my-card__subtitle");
-const cardText0 = document.querySelector("#my-card-0 .my-card__text");
-const cardImg0 = document.querySelector("#my-card-0 .my-card__img");
-const cardButton0 = document.querySelector("#my-card-0 .my-card__button");
-
-const cardTitle1 = document.querySelector("#my-card-1 .my-card__title");
-const cardSubtitle1 = document.querySelector("#my-card-1 .my-card__subtitle");
-const cardText1 = document.querySelector("#my-card-1 .my-card__text");
-const cardImg1 = document.querySelector("#my-card-1 .my-card__img");
-const cardButton1 = document.querySelector("#my-card-1 .my-card__button");
-
-const cardTitle2 = document.querySelector("#my-card-2 .my-card__title");
-const cardSubtitle2 = document.querySelector("#my-card-2 .my-card__subtitle");
-const cardText2 = document.querySelector("#my-card-2 .my-card__text");
-const cardImg2 = document.querySelector("#my-card-2 .my-card__img");
-const cardButton2 = document.querySelector("#my-card-2 .my-card__button");
-
-const cardTitle3 = document.querySelector("#my-card-3 .my-card__title");
-const cardSubtitle3 = document.querySelector("#my-card-3 .my-card__subtitle");
-const cardText3 = document.querySelector("#my-card-3 .my-card__text");
-const cardImg3 = document.querySelector("#my-card-3 .my-card__img");
-const cardButton3 = document.querySelector("#my-card-3 .my-card__button");
+const data = {};
+const cards = ["firstCard", "firstCard", "secondCard", "thirdCard"];
 
 const cardData = {
   firstCard: {
@@ -55,39 +40,42 @@ const cardData = {
   },
 };
 
-cardTitle0.innerHTML = cardData.firstCard.title;
-cardSubtitle0.innerHTML = cardData.firstCard.subtitle;
-cardText0.innerHTML = cardData.firstCard.text;
-cardImg0.style.backgroundImage = cardData.firstCard.img;
-cardButton0.setAttribute("href", cardData.firstCard.button);
+cards.map((card, index) => {
+  data[`cardTitle${index}`] = document.querySelector(
+    `#my-card-${index} .my-card__title`
+  );
+  data[`cardTitle${index}`].innerHTML = cardData[card].title;
 
-cardTitle1.innerHTML = cardData.firstCard.title;
-cardSubtitle1.innerHTML = cardData.firstCard.subtitle;
-cardText1.innerHTML = cardData.firstCard.text;
-cardImg1.style.backgroundImage = cardData.firstCard.img;
-cardButton1.setAttribute("href", cardData.firstCard.button);
+  data[`cardSubtitle${index}`] = document.querySelector(
+    `#my-card-${index} .my-card__subtitle`
+  );
+  data[`cardSubtitle${index}`].innerHTML = cardData[card].subtitle;
 
-cardTitle2.innerHTML = cardData.secondCard.title;
-cardSubtitle2.innerHTML = cardData.secondCard.subtitle;
-cardText2.innerHTML = cardData.secondCard.text;
-cardImg2.style.backgroundImage = cardData.secondCard.img;
-cardButton2.setAttribute("href", cardData.secondCard.button);
+  data[`cardText${index}`] = document.querySelector(
+    `#my-card-${index} .my-card__text`
+  );
+  data[`cardText${index}`].innerHTML = cardData[card].text;
 
-cardTitle3.innerHTML = cardData.thirdCard.title;
-cardSubtitle3.innerHTML = cardData.thirdCard.subtitle;
-cardText3.innerHTML = cardData.thirdCard.text;
-cardImg3.style.backgroundImage = cardData.thirdCard.img;
-cardButton3.setAttribute("href", cardData.thirdCard.button);
+  data[`cardImg${index}`] = document.querySelector(
+    `#my-card-${index} .my-card__img`
+  );
+  data[`cardImg${index}`].style.backgroundImage = cardData[card].img;
+
+  data[`cardButton${index}`] = document.querySelector(
+    `#my-card-${index} .my-card__button`
+  );
+  data[`cardButton${index}`].setAttribute("href", cardData[card].button);
+})
 
 function selectFirstCard() {
   firstCard.className = "my-card__first my-card--active";
   secondCard.className = "my-card__second";
   thirdCard.className = "my-card__third";
 
-  cardTitle0.innerHTML = cardData.firstCard.title;
-  cardSubtitle0.innerHTML = cardData.firstCard.subtitle;
-  cardText0.innerHTML = cardData.firstCard.text;
-  cardImg0.style.backgroundImage = cardData.firstCard.img;
+  cardTitle.innerHTML = cardData.firstCard.title;
+  cardSubtitle.innerHTML = cardData.firstCard.subtitle;
+  cardText.innerHTML = cardData.firstCard.text;
+  cardImg.style.backgroundImage = cardData.firstCard.img;
 }
 
 function selectSecondCard() {
@@ -95,10 +83,10 @@ function selectSecondCard() {
   secondCard.className = "my-card__second my-card--active";
   thirdCard.className = "my-card__third";
 
-  cardTitle0.innerHTML = cardData.secondCard.title;
-  cardSubtitle0.innerHTML = cardData.secondCard.subtitle;
-  cardText0.innerHTML = cardData.secondCard.text;
-  cardImg0.style.backgroundImage = cardData.secondCard.img;
+  cardTitle.innerHTML = cardData.secondCard.title;
+  cardSubtitle.innerHTML = cardData.secondCard.subtitle;
+  cardText.innerHTML = cardData.secondCard.text;
+  cardImg.style.backgroundImage = cardData.secondCard.img;
 }
 
 function selectThirdCard() {
@@ -106,18 +94,18 @@ function selectThirdCard() {
   secondCard.className = "my-card__second";
   thirdCard.className = "my-card__third my-card--active";
 
-  cardTitle0.innerHTML = cardData.thirdCard.title;
-  cardSubtitle0.innerHTML = cardData.thirdCard.subtitle;
-  cardText0.innerHTML = cardData.thirdCard.text;
-  cardImg0.style.backgroundImage = cardData.thirdCard.img;
+  cardTitle.innerHTML = cardData.thirdCard.title;
+  cardSubtitle.innerHTML = cardData.thirdCard.subtitle;
+  cardText.innerHTML = cardData.thirdCard.text;
+  cardImg.style.backgroundImage = cardData.thirdCard.img;
 }
 
 function navigateTo() {
   if (firstCard.className === "my-card__first my-card--active") {
-    cardButton0.setAttribute("href", cardData.firstCard.button);
+    cardButton.setAttribute("href", cardData.firstCard.button);
   } else if (secondCard.className === "my-card__second my-card--active") {
-    cardButton0.setAttribute("href", cardData.secondCard.button);
+    cardButton.setAttribute("href", cardData.secondCard.button);
   } else if (thirdCard.className === "my-card__third my-card--active") {
-    cardButton0.setAttribute("href", cardData.thirdCard.button);
+    cardButton.setAttribute("href", cardData.thirdCard.button);
   }
 }
