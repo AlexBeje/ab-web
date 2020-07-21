@@ -14,7 +14,11 @@ export default {
       outputStyle: "compressed",
       watch: "css",
     }),
-    terser(),
+    terser({
+      compress: false,
+      mangle: false,
+      module: true,
+    }),
   ],
   treeshake: false,
 };
