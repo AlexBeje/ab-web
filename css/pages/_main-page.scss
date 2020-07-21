@@ -16,22 +16,22 @@
     margin: $size-3;
     z-index: 200;
     &--burger {
-      background-image: url(../../assets/menu-s.svg);
+      background-image: url(../../build/build/assets/menu-s.svg);
       width: $size-4;
       height: $size-4;
       transition: $transition;
       &:hover {
-        background-image: url(../../assets/menu-s-hover.svg);
+        background-image: url(../../build/assets/menu-s-hover.svg);
       }
     }
     &--close {
       display: none;
-      background-image: url(../../assets/close-s.svg);
+      background-image: url(../../build/assets/close-s.svg);
       width: $size-4;
       height: $size-4;
       transition: $transition;
       &:hover {
-        background-image: url(../../assets/close-s-hover.svg);
+        background-image: url(../../build/assets/close-s-hover.svg);
       }
     }
   }
@@ -105,34 +105,34 @@
   bottom: $size-3;
   &--codepen {
     cursor: pointer;
-    background-image: url(../../assets/codepen-s.svg);
+    background-image: url(../../build/assets/codepen-s.svg);
     width: $size-3;
     height: $size-3;
     transition: $transition;
     &:hover {
-      background-image: url(../../assets/codepen-s-hover.svg);
+      background-image: url(../../build/assets/codepen-s-hover.svg);
     }
   }
   &--github {
     margin-top: $size-2;
     cursor: pointer;
-    background-image: url(../../assets/github-s.svg);
+    background-image: url(../../build/assets/github-s.svg);
     width: $size-3;
     height: $size-3;
     transition: $transition;
     &:hover {
-      background-image: url(../../assets/github-s-hover.svg);
+      background-image: url(../../build/assets/github-s-hover.svg);
     }
   }
   &--linkedin {
     margin-top: $size-2;
     cursor: pointer;
-    background-image: url(../../assets/linkedin-s.svg);
+    background-image: url(../../build/assets/linkedin-s.svg);
     width: $size-3;
     height: $size-3;
     transition: $transition;
     &:hover {
-      background-image: url(../../assets/linkedin-s-hover.svg);
+      background-image: url(../../build/assets/linkedin-s-hover.svg);
     }
   }
 }
@@ -141,7 +141,7 @@
 
 @include for-iphone {
   .main-page {
-    background-image: url(../../assets/portrait.png);
+    background-image: url(../../build/assets/portrait.png);
     background-position: bottom right -40px;
     background-repeat: no-repeat;
     background-size: auto 120%;
@@ -174,7 +174,7 @@
 
 @mixin ipad {
   .main-page {
-    background-image: url(../../assets/portrait.png);
+    background-image: url(../../build/assets/portrait.png);
     background-position: bottom right;
     background-repeat: no-repeat;
     background-size: auto 150%;
@@ -222,19 +222,19 @@
   }
   .nav__icon {
     &--burger {
-      background-image: url(../../assets/menu-m.svg);
+      background-image: url(../../build/assets/menu-m.svg);
       width: $size-8;
       height: $size-8;
       &:hover {
-        background-image: url(../../assets/menu-m-hover.svg);
+        background-image: url(../../build/assets/menu-m-hover.svg);
       }
     }
     &--close {
-      background-image: url(../../assets/close-m.svg);
+      background-image: url(../../build/assets/close-m.svg);
       width: $size-8;
       height: $size-8;
       &:hover {
-        background-image: url(../../assets/close-m-hover.svg);
+        background-image: url(../../build/assets/close-m-hover.svg);
       }
     }
   }
@@ -250,29 +250,29 @@
     right: 56px;
     bottom: $size-4;
     &--codepen {
-      background-image: url(../../assets/codepen-m.svg);
+      background-image: url(../../build/assets/codepen-m.svg);
       width: $size-6;
       height: $size-6;
       &:hover {
-        background-image: url(../../assets/codepen-m-hover.svg);
+        background-image: url(../../build/assets/codepen-m-hover.svg);
       }
     }
     &--github {
       margin-top: $size-3;
-      background-image: url(../../assets/github-m.svg);
+      background-image: url(../../build/assets/github-m.svg);
       width: $size-6;
       height: $size-6;
       &:hover {
-        background-image: url(../../assets/github-m-hover.svg);
+        background-image: url(../../build/assets/github-m-hover.svg);
       }
     }
     &--linkedin {
       margin-top: $size-3;
-      background-image: url(../../assets/linkedin-m.svg);
+      background-image: url(../../build/assets/linkedin-m.svg);
       width: $size-6;
       height: $size-6;
       &:hover {
-        background-image: url(../../assets/linkedin-m-hover.svg);
+        background-image: url(../../build/assets/linkedin-m-hover.svg);
       }
     }
   }
