@@ -4,7 +4,8 @@
   "description": "Alexandru Bejenaru's Portfolio.",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "rollup -c"
   },
   "repository": {
     "type": "git",
@@ -18,5 +19,10 @@
   "homepage": "https://github.com/AlexBeje/ab-web#readme",
   "dependencies": {
     "bootstrap": "^4.5.0"
+  },
+  "devDependencies": {
+    "rollup": "^2.22.1",
+    "rollup-plugin-scss": "^2.5.0",
+    "sass": "^1.26.10"
   }
 }

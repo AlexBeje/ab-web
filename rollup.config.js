@@ -1,6 +1,18 @@
+import scss from 'rollup-plugin-scss'
+
 export default {
-  entry: 'src/scripts/main.js',
-  dest: 'build/js/main.min.js',
-  format: 'iife',
-  sourceMap: 'inline',
-};
+  input: 'script/main.js',
+  output: {
+    file: 'build/js/main.min.js',
+    format: 'esm'
+  },
+  treeshake: false,
+  plugins: [
+    scss(
+      {
+        output: './build/css/main.css',
+        sass: require('sass')
+      }
+    )
+  ]
+}
