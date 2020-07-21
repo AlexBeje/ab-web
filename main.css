@@ -5884,6 +5884,7 @@ input, textarea {
   margin-bottom: 3rem;
 }
 
+#my-card-1,
 #my-card-2,
 #my-card-3 {
   display: none;
@@ -5953,10 +5954,12 @@ input, textarea {
 
 .my-card__button {
   background: #1AC5FF;
-  color: #1F1F1F;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: auto;
@@ -5966,6 +5969,10 @@ input, textarea {
 .my-card__button:hover, .my-card__button:active {
   background: #fff;
   color: #262626;
+}
+
+.my-card__button h2 {
+  color: #1F1F1F;
 }
 
 .my-card__img {
@@ -5978,10 +5985,12 @@ input, textarea {
 
 .projects-page__button {
   background: #1AC5FF;
-  color: #1F1F1F;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: auto;
@@ -5991,6 +6000,10 @@ input, textarea {
 .projects-page__button:hover, .projects-page__button:active {
   background: #fff;
   color: #262626;
+}
+
+.projects-page__button h2 {
+  color: #1F1F1F;
 }
 
 @media (min-width: 750px) and (max-width: 1280px) and (orientation: landscape) {
@@ -6084,10 +6097,12 @@ input, textarea {
   .my-card__button,
   .my-card .projects-page__button {
     background: #1AC5FF;
-    color: #1F1F1F;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     width: auto;
@@ -6098,6 +6113,10 @@ input, textarea {
   .my-card .projects-page__button:active {
     background: #fff;
     color: #262626;
+  }
+  .my-card__button h2,
+  .my-card .projects-page__button h2 {
+    color: #1F1F1F;
   }
   .my-card__button h2,
   .my-card .projects-page__button h2 {
@@ -6127,6 +6146,10 @@ input, textarea {
   .projects-page__subtitle {
     font-size: 4rem;
   }
+  #my-card-0 {
+    display: none;
+  }
+  #my-card-1,
   #my-card-2,
   #my-card-3 {
     display: block;
@@ -6170,6 +6193,10 @@ input, textarea {
   .projects-page__subtitle {
     font-size: 4rem;
   }
+  #my-card-0 {
+    display: none;
+  }
+  #my-card-1,
   #my-card-2,
   #my-card-3 {
     display: block;
@@ -6253,6 +6280,10 @@ input, textarea {
   margin-bottom: 0;
 }
 
+.skills-page__item:nth-child(odd) {
+  text-align: right;
+}
+
 .skills-page__icon--html {
   background: url(../../assets/html5.svg);
 }
@@ -6274,10 +6305,10 @@ input, textarea {
 .skills-page__icon--js,
 .skills-page__icon--vue {
   background-repeat: no-repeat;
-  background-size: 5rem;
-  height: 5rem;
+  background-size: 7rem;
+  height: 7rem;
   margin: 4px auto;
-  width: 5rem;
+  width: 7rem;
 }
 
 .contact-page-bg {
@@ -6358,15 +6389,25 @@ input, textarea {
 
 .contact-page__button {
   background: #1AC5FF;
-  color: #1F1F1F;
   border: none;
   border-radius: 5px;
-  float: right;
+  cursor: pointer;
   padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: auto;
   margin-bottom: 3rem;
+}
+
+.contact-page__button:hover, .contact-page__button:active {
+  background: #fff;
+  color: #262626;
+}
+
+.contact-page__button h2 {
+  color: #1F1F1F;
 }
 
 .contact-page__button:hover, .contact-page__button:active {

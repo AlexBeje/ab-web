@@ -17,6 +17,7 @@
   }
 }
 
+#my-card-1,
 #my-card-2,
 #my-card-3 {
   display: none;
@@ -199,6 +200,10 @@
       font-size: $size-4;
     }
   }
+  #my-card-0 {
+    display: none;
+  }
+  #my-card-1,
   #my-card-2,
   #my-card-3 {
     display: block;

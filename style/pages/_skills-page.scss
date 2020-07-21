@@ -23,6 +23,9 @@
   &:last-child {
     margin-bottom: 0;
   }
+  &:nth-child(odd) {
+    text-align: right;
+  }
 }
 
 .skills-page__icon--html {
@@ -46,8 +49,8 @@
 .skills-page__icon--js,
 .skills-page__icon--vue {
   background-repeat: no-repeat;
-  background-size: $size-5;
-  height: $size-5;
+  background-size: $size-7;
+  height: $size-7;
   margin: 4px auto;
-  width: $size-5;
+  width: $size-7;
 }
