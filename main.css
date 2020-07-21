@@ -5619,7 +5619,7 @@ input, textarea {
   }
 }
 
-@media (min-width: 750px) and (orientation: landscape) {
+@media (min-width: 750px) and (max-width: 1280px) and (orientation: landscape) {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right;
@@ -5650,7 +5650,7 @@ input, textarea {
   }
 }
 
-@media (min-width: 1280px) and (orientation: landscape) {
+@media (min-width: 1285px) and (orientation: landscape) {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right;
@@ -5745,7 +5745,7 @@ input, textarea {
   }
 }
 
-@media (min-width: 1920px) and (orientation: landscape) {
+@media (min-width: 1925px) and (orientation: landscape) {
   .main-page {
     background-image: url(../../assets/portrait.png);
     background-position: bottom right;
@@ -5872,7 +5872,7 @@ input, textarea {
   -webkit-box-direction: normal;
       -ms-flex-direction: column;
           flex-direction: column;
-  padding: 3rem 3rem 2rem 3rem;
+  padding: 3rem 2rem;
 }
 
 .projects-page__title {
@@ -5882,6 +5882,12 @@ input, textarea {
 
 .projects-page__subtitle {
   margin-bottom: 3rem;
+}
+
+#my-card-1,
+#my-card-2,
+#my-card-3 {
+  display: none;
 }
 
 .my-card {
@@ -5946,39 +5952,45 @@ input, textarea {
   margin-bottom: 3rem;
 }
 
-.my-card__button,
-.my-card .projects-page__button {
+.my-card__button {
   background: #1AC5FF;
-  color: #1F1F1F;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: auto;
+  float: right;
 }
 
-.my-card__button:hover, .my-card__button:active,
-.my-card .projects-page__button:hover,
-.my-card .projects-page__button:active {
+.my-card__button:hover, .my-card__button:active {
   background: #fff;
   color: #262626;
 }
 
+.my-card__button h2 {
+  color: #1F1F1F;
+}
+
 .my-card__img {
   background-position: center center;
-  border-radius: 0 0 5px 5px;
   background-repeat: no-repeat;
   background-size: cover;
+  border-radius: 0 0 5px 5px;
   height: 200px;
 }
 
 .projects-page__button {
   background: #1AC5FF;
-  color: #1F1F1F;
   border: none;
   border-radius: 5px;
+  cursor: pointer;
   padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: auto;
@@ -5990,9 +6002,13 @@ input, textarea {
   color: #262626;
 }
 
-@media (min-width: 750px) and (orientation: landscape) {
+.projects-page__button h2 {
+  color: #1F1F1F;
+}
+
+@media (min-width: 750px) and (max-width: 1280px) and (orientation: landscape) {
   .projects-page {
-    padding: 4rem;
+    padding: 4rem 0;
   }
   .projects-page__title {
     font-size: 4rem;
@@ -6081,10 +6097,12 @@ input, textarea {
   .my-card__button,
   .my-card .projects-page__button {
     background: #1AC5FF;
-    color: #1F1F1F;
     border: none;
     border-radius: 5px;
+    cursor: pointer;
     padding: 1rem 2rem;
+    text-align: center;
+    text-decoration: none;
     -webkit-transition: 0.4s;
     transition: 0.4s;
     width: auto;
@@ -6095,6 +6113,10 @@ input, textarea {
   .my-card .projects-page__button:active {
     background: #fff;
     color: #262626;
+  }
+  .my-card__button h2,
+  .my-card .projects-page__button h2 {
+    color: #1F1F1F;
   }
   .my-card__button h2,
   .my-card .projects-page__button h2 {
@@ -6110,6 +6132,119 @@ input, textarea {
   }
   .projects-page__button h2 {
     font-size: 3rem;
+  }
+}
+
+@media (min-width: 1285px) and (orientation: landscape) {
+  .projects-page {
+    padding: 7rem 0;
+  }
+  .projects-page__title {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+  }
+  .projects-page__subtitle {
+    font-size: 4rem;
+  }
+  #my-card-0 {
+    display: none;
+  }
+  #my-card-1,
+  #my-card-2,
+  #my-card-3 {
+    display: block;
+  }
+  .my-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .my-card + .my-card {
+    margin-left: 3rem;
+  }
+  .my-card__selection {
+    display: none;
+  }
+  .my-card__body {
+    padding: 5rem;
+  }
+  .my-card__title {
+    font-size: 4rem;
+  }
+  .my-card__text {
+    font-size: 3rem;
+    height: 150px;
+    line-height: 3rem;
+  }
+  .projects-page__button h2 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+}
+
+@media (min-width: 1925px) and (orientation: landscape) {
+  .projects-page {
+    padding: 7rem 0;
+  }
+  .projects-page__title {
+    font-size: 6rem;
+    margin-bottom: 3rem;
+  }
+  .projects-page__subtitle {
+    font-size: 4rem;
+  }
+  #my-card-0 {
+    display: none;
+  }
+  #my-card-1,
+  #my-card-2,
+  #my-card-3 {
+    display: block;
+  }
+  .my-cards {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
+  .my-card + .my-card {
+    margin-left: 3rem;
+  }
+  .my-card__selection {
+    display: none;
+  }
+  .my-card__body {
+    padding: 5rem;
+  }
+  .my-card__title {
+    font-size: 4rem;
+  }
+  .my-card__text {
+    font-size: 3rem;
+    height: 150px;
+    line-height: 3rem;
+  }
+  .projects-page__button h2 {
+    font-size: 3rem;
+    line-height: 5rem;
+  }
+  .projects-page__title {
+    font-size: 7rem;
+    margin-bottom: 4rem;
+  }
+  .projects-page__subtitle {
+    font-size: 5rem;
+    margin-bottom: 5rem;
+  }
+  .my-card + .my-card {
+    margin-left: 4rem;
+  }
+  .my-card__text {
+    font-size: 4rem;
+    height: 250px;
+    line-height: 4rem;
+  }
+  .my-card__img {
+    height: 300px;
   }
 }
 
@@ -6145,6 +6280,10 @@ input, textarea {
   margin-bottom: 0;
 }
 
+.skills-page__item:nth-child(odd) {
+  text-align: right;
+}
+
 .skills-page__icon--html {
   background: url(../../assets/html5.svg);
 }
@@ -6166,10 +6305,10 @@ input, textarea {
 .skills-page__icon--js,
 .skills-page__icon--vue {
   background-repeat: no-repeat;
-  background-size: 5rem;
-  height: 5rem;
+  background-size: 7rem;
+  height: 7rem;
   margin: 4px auto;
-  width: 5rem;
+  width: 7rem;
 }
 
 .contact-page-bg {
@@ -6250,15 +6389,25 @@ input, textarea {
 
 .contact-page__button {
   background: #1AC5FF;
-  color: #1F1F1F;
   border: none;
   border-radius: 5px;
-  float: right;
+  cursor: pointer;
   padding: 1rem 2rem;
+  text-align: center;
+  text-decoration: none;
   -webkit-transition: 0.4s;
   transition: 0.4s;
   width: auto;
   margin-bottom: 3rem;
+}
+
+.contact-page__button:hover, .contact-page__button:active {
+  background: #fff;
+  color: #262626;
+}
+
+.contact-page__button h2 {
+  color: #1F1F1F;
 }
 
 .contact-page__button:hover, .contact-page__button:active {

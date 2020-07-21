@@ -42,14 +42,7 @@
 }
 
 .contact-page__button {
-  background: $clr-0;
-  color: $clr-1;;
-  border: none;
-  border-radius: 5px;
-  float: right;
-  padding: $size-1 $size-2;
-  transition: $transition;
-  width: auto;
+  @include my-button;
   margin-bottom: $size-3;
   &:hover,
   &:active {
