@@ -1,3 +1,4 @@
+import livereload from "rollup-plugin-livereload";
 import serve from "rollup-plugin-serve";
 import scss from "rollup-plugin-scss";
 import { terser } from "rollup-plugin-terser";
@@ -27,6 +28,7 @@ export default {
       host: "localhost",
       port: 8080,
     }),
+    livereload({ watch: "build" }),
   ],
   treeshake: false,
 };
