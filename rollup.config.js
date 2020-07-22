@@ -1,5 +1,5 @@
-import livereload from "rollup-plugin-livereload";
-import serve from "rollup-plugin-serve";
+import copy from "rollup-plugin-copy";
+import dev from 'rollup-plugin-dev';
 import scss from "rollup-plugin-scss";
 import { terser } from "rollup-plugin-terser";
 
@@ -21,14 +21,17 @@ export default {
       mangle: false,
       module: true,
     }),
-    serve({
-      // Folder to serve files from
-      contentBase: "build",
-      // Options used in setting up server
-      host: "localhost",
+    dev({
+      dirs: ['build'],
+      host: 'localhost',
       port: 8080,
+      silent: true
     }),
-    livereload({ watch: "build" }),
+    copy({
+      targets: [
+        { src: "build/assets/*", dest: "assets" },
+      ],
+    }),
   ],
   treeshake: false,
 };
