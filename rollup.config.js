@@ -1,3 +1,4 @@
+import serve from "rollup-plugin-serve";
 import scss from "rollup-plugin-scss";
 import { terser } from "rollup-plugin-terser";
 
@@ -18,6 +19,13 @@ export default {
       compress: false,
       mangle: false,
       module: true,
+    }),
+    serve({
+      // Folder to serve files from
+      contentBase: "build",
+      // Options used in setting up server
+      host: "localhost",
+      port: 8080,
     }),
   ],
   treeshake: false,

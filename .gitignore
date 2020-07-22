@@ -3,3 +3,5 @@ build/js
 build/css
 .history
 assets
+.vscode/launch.json
+.vscode/settings.json
