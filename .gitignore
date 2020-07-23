@@ -1,7 +1,9 @@
-node_modules
-build/js
-build/css
+// VS Code config
 .history
-assets
-.vscode/launch.json
-.vscode/settings.json
+.vscode
+
+// NodeJS packages
+node_modules
+
+// Process -> Project goes public (builded)
+public
