@@ -6,21 +6,24 @@ import { terser } from "rollup-plugin-terser";
 export default {
   input: "js/main.js",
   output: {
-    file: "build/js/main.min.js",
+    file: "public/js/main.min.js",
     format: "esm",
   },
   plugins: [
     copy({
-      targets: [{ src: "build/assets/*", dest: "assets" }],
+      targets: [
+        { src: "images/**", dest: "public/images" },
+        { src: "index.html", dest: "public/"}
+      ],
     }),
     dev({
-      dirs: ["build"],
+      dirs: ["public"],
       host: "localhost",
       port: 8080,
       silent: true,
     }),
     scss({
-      output: "./build/css/main.css",
+      output: "./public/css/main.css",
       sass: require("sass"),
       outputStyle: "compressed",
       watch: "css",
