@@ -17,7 +17,7 @@ const cardData = {
     subtitle: "Graphic Design",
     text:
       "Newsletter design about family hiking. Created during the final Practice of the UOC Graphic Design subject.",
-    img: "url(/images/second-card.png)",
+    img: "url(/assets/second-card.png)",
     button:
       "https://www.amazon.es/clouddrive/share/mt8wf4cfJUwSjWLHE8SAFjfWXbTyERnmi5BdHoZbVOJ",
   },
@@ -26,7 +26,7 @@ const cardData = {
     subtitle: "Video",
     text:
       "A “freedom” themed video created in iMovie Mac program. Developed while courising UOC Video subject.",
-    img: "url(/images/first-card.png)",
+    img: "url(/assets/first-card.png)",
     button: "https://www.youtube.com/watch?v=vMO1n7FL7ME",
   },
   thirdCard: {
@@ -34,7 +34,7 @@ const cardData = {
     subtitle: "Template",
     text:
       "Here is the template of the Alexandru Bejenaru Portfolio, designed in Figma and developed in Visual Studio.",
-    img: "url(/images/third-card.png)",
+    img: "url(/assets/third-card.png)",
     button:
       "https://www.figma.com/file/2emDRlJyx6XPLFfU7v499u/AB-Web?node-id=46%3A1",
   },
