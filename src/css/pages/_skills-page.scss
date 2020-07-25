@@ -31,16 +31,16 @@
   flex-direction: column;
   height: 134px;
   justify-content: center;
-  padding: 8px;
+  // padding: 8px;
   position: relative;
   text-align: center;
   width: 134px;
-  &--white {
-    background: $clr-1;
-  }
-  &--blue {
-    background: $clr-2;
-  }
+  // &--white {
+  //   background: $clr-1;
+  // }
+  // &--blue {
+  //   background: $clr-2;
+  // }
   &__flip-icon {
     height: 12px;
     position: absolute;
@@ -61,7 +61,8 @@
     }
   }
   &__logo {
-    background-position: center
+    align-self: center;
+    background-position: center;
     background-repeat: no-repeat;
     height: 100px;
     width: 100px;
@@ -69,7 +70,68 @@
   &__title {
     display: none;
   }
-  &__details {
-    display: none;  
-  }
+  // &__details {
+  //   display: none;
+  // }
+}
+
+// ------------ Flip Card ------------ //
+
+.card.flipped {
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg); /* IE 9 */
+  -moz-transform: rotatey(-180deg); /* Firefox */
+  -webkit-transform: rotatey(-180deg); /* Safari and Chrome */
+  -o-transform: rotatey(-180deg); /* Opera */
+}
+
+.card {
+  -webkit-transform-style: preserve-3d;
+  -webkit-transition: 0.5s;
+  -moz-transform-style: preserve-3d;
+  -moz-transition: 0.5s;
+  -ms-transform-style: preserve-3d;
+  -ms-transition: 0.5s;
+  -o-transform-style: preserve-3d;
+  -o-transition: 0.5s;
+  transform-style: preserve-3d;
+  transition: 0.5s;
+}
+
+.back, .front {
+  align-self: center;
+  cursor: pointer;
+  display: flex;
+  flex-direction: column;
+  height: 134px;
+  justify-content: center;
+  align-content: center;
+  // padding: 8px;
+  position: relative;
+  text-align: center;
+  z-index: 2;
+  backface-visibility: hidden; /* W3C */
+  -webkit-backface-visibility: hidden; /* Safari & Chrome */
+  -moz-backface-visibility: hidden; /* Firefox */
+  -ms-backface-visibility: hidden; /* Internet Explorer */
+  -o-backface-visibility: hidden; /* Opera */
+}
+
+.back {
+  position: absolute;
+  background: blue;
+  width: 100%;
+  height: 100%;
+  transform: rotatey(-180deg);
+  -ms-transform: rotatey(-180deg); /* IE 9 */
+  -moz-transform: rotatey(-180deg); /* Firefox */
+  -webkit-transform: rotatey(-180deg); /* Safari and Chrome */
+  -o-transform: rotatey(-180deg); /* Opera */
+}
+
+.front {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  background: red;
 }
