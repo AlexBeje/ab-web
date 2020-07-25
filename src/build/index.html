@@ -71,69 +71,75 @@
     <div class="projects-page-bg" id="projects-page">
       <div class="container">
         <div class="row">
-          <div class="col-12 projects-page">
+          <div class="col projects-page">
             <h1 class="projects-page__title text-center">DEVEL0PED PR0JECTS</h1>
             <p class="projects-page__subtitle text-center">
               Here are listed developed and in progress projects.
             </p>
-            <div class="my-cards">
-              <div class="my-card" id="my-card-0">
-                <div class="my-card__selection">
+            <div class="my-projects-cards">
+              <div class="my-projects-card" id="my-projects-card-0">
+                <div class="my-projects-card__selection">
                   <div
-                    class="my-card__first my-card--active"
+                    class="my-projects-card__first my-projects-card--active"
                     onClick="selectFirstCard()"
                   >
                     <h2>I.</h2>
                   </div>
-                  <div class="my-card__second" onClick="selectSecondCard()">
+                  <div
+                    class="my-projects-card__second"
+                    onClick="selectSecondCard()"
+                  >
                     <h2>II.</h2>
                   </div>
-                  <div class="my-card__third" onClick="selectThirdCard()">
+                  <div
+                    class="my-projects-card__third"
+                    onClick="selectThirdCard()"
+                  >
                     <h2>III.</h2>
                   </div>
                 </div>
-                <div class="my-card__body">
-                  <h1 class="my-card__title"></h1>
-                  <p class="my-card__subtitle"></p>
-                  <p class="my-card__text"></p>
-                  <a class="my-card__button" onClick="navigateTo()">
+                <div class="my-projects-card__body">
+                  <h1 class="my-projects-card__title"></h1>
+                  <p class="my-projects-card__subtitle"></p>
+                  <p class="my-projects-card__text"></p>
+                  <a class="my-projects-card__button" onClick="navigateTo()">
                     <h2>See More</h2>
                   </a>
                 </div>
-                <div class="my-card__img"></div>
+                <div class="my-projects-card__img"></div>
               </div>
-              <div class="my-card" id="my-card-1">
-                <div class="my-card__body">
-                  <h1 class="my-card__title"></h1>
-                  <p class="my-card__subtitle"></p>
-                  <p class="my-card__text"></p>
-                  <a class="my-card__button" onClick="navigateTo()">
+              <div class="my-projects-card" id="my-projects-card-1">
+                <div class="my-projects-card__body">
+                  <h1 class="my-projects-card__title"></h1>
+                  <p class="my-projects-card__subtitle"></p>
+                  <p class="my-projects-card__text"></p>
+                  <a class="my-projects-card__button" onClick="navigateTo()">
                     <h2>See More</h2>
                   </a>
                 </div>
-                <div class="my-card__img"></div>
+                <div class="my-projects-card__img"></div>
               </div>
-              <div class="my-card" id="my-card-2">
-                <div class="my-card__body">
-                  <h1 class="my-card__title"></h1>
-                  <p class="my-card__subtitle"></p>
-                  <p class="my-card__text"></p>
-                  <a class="my-card__button" onClick="navigateTo()">
+              <div class="my-projects-card" id="my-projects-card-2">
+                <div class="my-projects-card__body">
+                  <h1 class="my-projects-card__title"></h1>
+                  <p class="my-projects-card__subtitle"></p>
+                  <p class="my-projects-card__text"></p>
+                  <a class="my-projects-card__button" onClick="navigateTo()">
                     <h2>See More</h2>
                   </a>
                 </div>
-                <div class="my-card__img"></div>
+                <div class="my-projects-card__img"></div>
               </div>
-              <div class="my-card" id="my-card-3">
-                <div class="my-card__body">
-                  <h1 class="my-card__title"></h1>
-                  <p class="my-card__subtitle"></p>
-                  <p class="my-card__text"></p>
-                  <a class="my-card__button" onClick="navigateTo()">
+              <div class="my-projects-card" id="my-projects-card-3">
+                <div class="my-projects-card__body">
+                  <h1 class="my-projects-card__title"></h1>
+                  <p class="my-projects-card__subtitle"></p>
+                  <p class="my-projects-card__text"></p>
+                  <a class="my-projects-card__button" onClick="navigateTo()">
                     <h2>See More</h2>
                   </a>
                 </div>
-                <div class="my-card__img"></div>
+                <div class="my-projects-card__img"></div>
               </div>
             </div>
             <a class="projects-page__button">
@@ -145,56 +151,74 @@
     </div>
     <!-- -------- Skills page -------- -->
     <div class="skills-page-bg" id="skills-page">
-      <div class="container skills-page">
-        <div class="row">
-          <div class="col-12">
-            <h1 class="skills-page__title text-center">SK1LLS</h1>
-            <p class="skills-page__subtitle text-center">
-              These are the skills that I aquired during the last years.
-            </p>
+      <div class="col skills-page">
+        <h1 class="skills-page__title text-center">SK1LLS</h1>
+        <p class="skills-page__subtitle text-center">
+          These are the skills that I aquired during my designer and developer
+          journey.
+        </p>
+
+        <div class="my-skills-cards flipCard">
+          <div
+            class="my-skills-card my-skills-card--white card"
+            onclick="this.classList.toggle('flipped');"
+          >
+            <div class="side front">
+              <div class="my-skills-card__flip-icon">
+                <div class="my-skills-card__flip-icon--white"></div>
+              </div>
+              <div class="my-skills-card__logo"></div>
+            </div>
+            <div class="side back">
+              <div class="my-skills-card__flip-icon">
+                <div class="my-skills-card__flip-icon--white"></div>
+              </div>
+              <div class="my-skills-card__details"></div>
+            </div>
           </div>
-        </div>
-        <div class="row skills-page__item">
-          <div class="col-3">
-            <div class="skills-page__icon--html"></div>
+
+          <div
+            class="my-skills-card my-skills-card--white card"
+            onclick="this.classList.toggle('flipped');"
+          >
+            <div class="side front">
+              <div class="my-skills-card__flip-icon">
+                <div class="my-skills-card__flip-icon--blue"></div>
+              </div>
+              <div class="my-skills-card__logo"></div>
+            </div>
+            <div class="side back">
+              <div class="my-skills-card__details"></div>
+            </div>
           </div>
-          <div class="col-9">
-            <p class="skills-page__text">
-              HTML and HTML5 knowledge, along with applied visual design and
-              accesibility skills.
-            </p>
+
+          <div class="my-skills-card my-skills-card--blue">
+            <div class="my-skills-card__flip-icon">
+              <div class="my-skills-card__flip-icon--blue"></div>
+            </div>
+            <div class="my-skills-card__logo"></div>
+            <div class="my-skills-card__details"></div>
           </div>
-        </div>
-        <div class="row skills-page__item">
-          <div class="col-9">
-            <p class="skills-page__text">
-              Responsive CSS3 web design, flexboxand css grid insight.
-            </p>
+          <div class="my-skills-card my-skills-card--white">
+            <div class="my-skills-card__flip-icon">
+              <div class="my-skills-card__flip-icon--white"></div>
+            </div>
+            <div class="my-skills-card__logo"></div>
+            <div class="my-skills-card__details"></div>
           </div>
-          <div class="col-3">
-            <div class="skills-page__icon--css"></div>
+          <div class="my-skills-card my-skills-card--white">
+            <div class="my-skills-card__flip-icon">
+              <div class="my-skills-card__flip-icon--white"></div>
+            </div>
+            <div class="my-skills-card__logo"></div>
+            <div class="my-skills-card__details"></div>
           </div>
-        </div>
-        <div class="row skills-page__item">
-          <div class="col-3">
-            <div class="skills-page__icon--js"></div>
-          </div>
-          <div class="col-9">
-            <p class="skills-page__text">
-              Vanila and ES6 Javascript knowledge, Regular expresions skills.
-              Functional programming familiarity.
-            </p>
-          </div>
-        </div>
-        <div class="row skills-page__item">
-          <div class="col-9">
-            <p class="skills-page__text">
-              Vue.js library insight. Gathered knowladge from udemy and vue
-              mastery courses.
-            </p>
-          </div>
-          <div class="col-3">
-            <div class="skills-page__icon--vue"></div>
+          <div class="my-skills-card my-skills-card--blue">
+            <div class="my-skills-card__flip-icon">
+              <div class="my-skills-card__flip-icon--blue"></div>
+            </div>
+            <div class="my-skills-card__logo"></div>
+            <div class="my-skills-card__details"></div>
           </div>
         </div>
       </div>

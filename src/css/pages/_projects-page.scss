@@ -4,7 +4,6 @@
 }
 
 .projects-page {
-  background-color: $clr-1;
   display: flex;
   flex-direction: column;
   padding: $size-3 $size-2;
@@ -17,13 +16,13 @@
   }
 }
 
-#my-card-1,
-#my-card-2,
-#my-card-3 {
+#my-projects-card-1,
+#my-projects-card-2,
+#my-projects-card-3 {
   display: none;
 }
 
-.my-card {
+.my-projects-card {
   color: $white;
   &__selection {
     display: flex;
@@ -102,7 +101,7 @@
       font-size: $size-3;
     }
   }
-  .my-card {
+  .my-projects-card {
     display: flex;
     height: 60vh;
     margin: 0 auto;
@@ -200,21 +199,21 @@
       font-size: $size-4;
     }
   }
-  #my-card-0 {
+  #my-projects-card-0 {
     display: none;
   }
-  #my-card-1,
-  #my-card-2,
-  #my-card-3 {
+  #my-projects-card-1,
+  #my-projects-card-2,
+  #my-projects-card-3 {
     display: block;
   }
-  .my-cards {
+  .my-projects-cards {
     display: flex;
   }
-  .my-card + .my-card {
+  .my-projects-card + .my-projects-card {
     margin-left: $size-3;
   }
-  .my-card {
+  .my-projects-card {
     &__selection {
       display: none;
     }
@@ -254,10 +253,10 @@
       margin-bottom: $size-5;
     }
   }
-  .my-card + .my-card {
+  .my-projects-card + .my-projects-card {
     margin-left: $size-4;
   }
-  .my-card {
+  .my-projects-card {
     &__text {
       font-size: $size-4;
       height: 250px;
