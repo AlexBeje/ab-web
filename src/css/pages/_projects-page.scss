@@ -210,10 +210,11 @@
   .my-projects-cards {
     display: flex;
   }
-  .my-projects-card + .my-projects-card {
-    margin-left: $size-3;
-  }
   .my-projects-card {
+    margin-left: $size-3;
+    &:nth-child(2) {
+      margin-left: 0;
+    }
     &__selection {
       display: none;
     }
