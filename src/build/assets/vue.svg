@@ -1,1 +1,3 @@
-<svg xmlns="http://www.w3.org/2000/svg" width="256" height="221" viewBox="0 0 256 221" preserveAspectRatio="xMidYMid"><style>.a{fill:#41B883;}</style><path d="M204.8 0L256 0 128 220.8 0 0 50.6 0 97.9 0 128 51.2 157.4 0 204.8 0Z" class="a"/><path d="M0 0L128 220.8 256 0 204.8 0 128 132.5 50.6 0 0 0Z" class="a"/><path d="M50.6 0L128 133.1 204.8 0 157.4 0 128 51.2 97.9 0 50.6 0Z" fill="#35495E"/></svg>
+<svg xmlns="http://www.w3.org/2000/svg" width="66.19" height="56.69" viewBox="0 0 66.19 56.69">
+  <path id="Icon_awesome-vuejs" data-name="Icon awesome-vuejs" d="M52.73,4.521H41.369L33.1,17.611,26,4.521H0l33.1,56.69,33.1-56.69ZM8.229,9.249h7.949L33.1,38.532,50,9.249h7.949L33.1,51.829,8.229,9.249Z" transform="translate(0 -4.521)" fill="#fff"/>
+</svg>

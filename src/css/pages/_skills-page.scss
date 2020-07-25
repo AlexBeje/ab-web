@@ -1,56 +1,75 @@
 .skills-page-bg {
-  background: $clr-2;
+  background: $clr-3;
   color: $white;
 }
 
 .skills-page {
-  padding: $size-3 $size-4;
+  padding: $size-3 $size-2;
+  &__title {
+    color: $clr-0;
+    margin-bottom: $size-1;
+  }
+  &__subtitle {
+    margin-bottom: $size-3;
+  }
 }
 
-.skills-page__title {
-  color: $clr-0;
-  margin-bottom: $size-1;
-}
-
-.skills-page__subtitle {
-  margin-bottom: $size-3;
-}
-
-.skills-page__item {
+.my-skills-cards {
   align-items: center;
+  display: grid;
+  gap: 8px;
+  grid-template-columns: 1fr 1fr;
+  .my-skills-card:nth-child(2n + 1) {
+    justify-self: right;
+  }
+}
+
+.my-skills-card {
+  align-items: center;
+  cursor: pointer;
   display: flex;
-  margin-bottom: $size-2;
-  &:last-child {
-    margin-bottom: 0;
+  flex-direction: column;
+  height: 134px;
+  justify-content: center;
+  padding: 8px;
+  position: relative;
+  text-align: center;
+  width: 134px;
+  &--white {
+    background: $clr-1;
   }
-  &:nth-child(odd) {
-    text-align: right;
+  &--blue {
+    background: $clr-2;
   }
-}
-
-.skills-page__icon--html {
-  background: url(/assets/html5.svg);
-}
-
-.skills-page__icon--css {
-  background: url(/assets/css3.svg);
-}
-
-.skills-page__icon--js {
-  background: url(/assets/javascript.svg);
-}
-
-.skills-page__icon--vue {
-  background: url(/assets/vue.svg);
-}
-
-.skills-page__icon--html,
-.skills-page__icon--css,
-.skills-page__icon--js,
-.skills-page__icon--vue {
-  background-repeat: no-repeat;
-  background-size: $size-7;
-  height: $size-7;
-  margin: 4px auto;
-  width: $size-7;
+  &__flip-icon {
+    height: 12px;
+    position: absolute;
+    right: 8px;
+    top: 8px;
+    width: 12px;
+    &--white {
+      background-image: url(../assets/flip-white.svg);
+      background-size: cover;
+      height: 12px;
+      width: 12px;
+    }
+    &--blue {
+      background-image: url(../assets/flip-blue.svg);
+      background-size: cover;
+      height: 12px;
+      width: 12px;
+    }
+  }
+  &__logo {
+    background-position: center
+    background-repeat: no-repeat;
+    height: 100px;
+    width: 100px;
+  }
+  &__title {
+    display: none;
+  }
+  &__details {
+    display: none;  
+  }
 }
