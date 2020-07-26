@@ -18,11 +18,9 @@
   align-items: center;
   display: grid;
   gap: 8px;
-  grid-template-columns: 1fr 1fr;
+  grid-template-columns: 134px 134px;
+  justify-content: center;
   perspective: 800;
-  .my-skills-card:nth-child(2n + 1) {
-    justify-self: right;
-  }
 }
 
 .my-skills-card {
@@ -71,22 +69,22 @@
     color: $clr-0;
   }
   &__flip-icon {
-    height: 12px;
+    height: 16px;
     position: absolute;
     right: 8px;
     top: 8px;
-    width: 12px;
+    width: 16px;
     &--white {
       background-image: url(../assets/flip-white.svg);
       background-size: cover;
-      height: 12px;
-      width: 12px;
+      height: 16px;
+      width: 16px;
     }
     &--blue {
       background-image: url(../assets/flip-blue.svg);
       background-size: cover;
-      height: 12px;
-      width: 12px;
+      height: 16px;
+      width: 16px;
     }
   }
   &__logo {
@@ -107,4 +105,95 @@
   -moz-transform: rotatey(180deg); /* Firefox */
   -webkit-transform: rotatey(180deg); /* Safari and Chrome */
   -o-transform: rotatey(180deg); /* Opera */
+}
+
+//------------------------ Media queries ------------------------//
+
+@mixin ipad {
+  .skills-page {
+    padding: $size-4 0;
+    &__title {
+      font-size: $size-4;
+    }
+    &__subtitle {
+      font-size: $size-3;
+    }
+  }
+  .my-skills-cards {
+    gap: 16px;
+    grid-template-columns: 264px 264px 264px;
+    perspective: 2000;
+    .my-skills-card:nth-child(2n) {
+      order: 1; 
+    }
+  }
+  .my-skills-card {
+    height: 264px;
+    width: 264px;
+    &__back {
+      padding: 32px;
+    }
+    &__flip-icon {
+      height: 24px;
+      right: 16px;
+      top: 16px;
+      width: 24px;
+      &--white {
+        height: 24px;
+        width: 24px;
+      }
+      &--blue {
+        height: 24px;
+        width: 24px;
+      }
+    }
+    &__logo {
+      height: 130px;
+      width: 130px;
+      background-size: contain;
+    }
+    &__details {
+      font-size: $size-3;
+      line-height: $size-3;
+    }
+  }
+}
+
+@include for-ipad {
+  @include ipad;
+}
+
+@include for-desktop-hd {
+  @include ipad;
+  .skills-page {
+    padding: $size-7 0;
+    &__title {
+      font-size: $size-6;
+      margin-bottom: $size-3;
+    }
+    &__subtitle {
+      font-size: $size-4;
+    }
+  }
+  .my-skills-cards {
+    gap: 24px;
+    grid-template-columns: 364px 364px 364px;
+    perspective: 2000;
+  }
+  .my-skills-card {
+    height: 364px;
+    width: 364px;
+    &__flip-icon {
+      right: 24px;
+      top: 24px;
+    }
+    &__logo {
+      height: 160px;
+      width: 160px;
+    }
+    &__details {
+      font-size: $size-4;
+      line-height: $size-4;
+    }
+  }
 }
