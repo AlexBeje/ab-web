@@ -3,50 +3,109 @@
 }
 
 .contact-page {
-  background: $clr-1;
   color: $white;
   display: flex;
   flex-direction: column;
-  padding: $size-3 $size-3 $size-2 $size-3;
-}
-
-.contact-page__title {
-  color: $clr-0;
-  margin-bottom: $size-1;
-}
-
-.contact-page__subtitle {
-  margin-bottom: $size-3;
-}
-
-.contact-page__form {
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
-}
-
-.contact-page__name,
-.contact-page__subject,
-.contact-page__text {
-  padding: $size-2;
-  margin-bottom: $size-1;
-  border: none;
-  border-radius: 5px;
-  &::placeholder {
-    color: $clr-1;
+  padding: $size-3;
+  &__title {
+    color: $clr-0;
+    margin-bottom: $size-1;
+  }
+  &__subtitle {
+    margin-bottom: $size-3;
+  }
+  &__form {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+  }
+  &__name,
+  &__subject,
+  &__text {
+    padding: $size-2;
+    margin-bottom: $size-1;
+    border: none;
+    border-radius: 5px;
+    &::placeholder {
+      color: $clr-1;
+    }
+  }
+  &__text {
+    margin-bottom: $size-3;
+  }
+  &__button {
+    @include my-button;
+    &:hover,
+    &:active {
+      background: $white;
+      color: $clr-2;
+    }
   }
 }
 
-.contact-page__text {
-  margin-bottom: $size-3;
+//------------------------ Media queries ------------------------//
+
+@include for-ipad {
+  .contact-page {
+    padding: $size-4 0;
+    &__title {
+      font-size: $size-4;
+    }
+    &__subtitle {
+      font-size: $size-3;
+    }
+    &__form {
+      width: 500px;
+      margin: auto;
+    }
+    &__name,
+    &__subject,
+    &__text {
+      font-size: $size-3;
+      padding: $size-3;
+      margin-bottom: $size-2;
+    }
+    &__text {
+      margin-bottom: $size-2;
+    }
+    &__button {
+      @include my-button;
+      h2 {
+        font-size: $size-3;
+      }
+    }
+  }
 }
 
-.contact-page__button {
-  @include my-button;
-  margin-bottom: $size-3;
-  &:hover,
-  &:active {
-    background: $white;
-    color: $clr-2;
+@include for-desktop-hd {
+  .contact-page {
+    padding: $size-7 0;
+    &__title {
+      font-size: $size-6;
+    }
+    &__subtitle {
+      font-size: $size-4;
+      line-height: $size-4;
+    }
+    &__form {
+      width: 800px;
+      margin: auto;
+    }
+    &__name,
+    &__subject,
+    &__text {
+      font-size: $size-4;
+      padding: $size-4;
+      margin-bottom: $size-3;
+    }
+    &__text {
+      margin-bottom: $size-3;
+    }
+    &__button {
+      @include my-button;
+      h2 {
+        font-size: $size-4;
+      }
+    }
   }
 }
