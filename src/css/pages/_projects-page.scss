@@ -9,10 +9,12 @@
   padding: $size-3 $size-2;
   &__title {
     color: $clr-0;
-    margin-bottom: $size-1;
+    width: 80%;
+    margin: 0 auto $size-1 auto;
   }
   &__subtitle {
-    margin-bottom: $size-3;
+    width: 80%;
+    margin: 0 auto $size-3 auto;
   }
 }
 
@@ -87,19 +89,29 @@
 
 .projects-page__button {
   @include my-button;
-  margin: $size-2 auto 0 auto;
+  margin: $size-3 auto 0 auto;
 }
 
 //------------------------ Media queries ------------------------//
+@include for-iphone {
+  .projects-page {
+    padding: $size-3;
+  }
+}
 
 @include for-ipad {
   .projects-page {
     padding: $size-4 0;
     &__title {
       font-size: $size-4;
+      line-height: $size-4;
+      margin-bottom: $size-2;
     }
     &__subtitle {
       font-size: $size-3;
+      line-height: $size-3;
+      width: 40%;
+      margin-bottom: $size-4;
     }
   }
   .my-projects-card {
@@ -126,6 +138,7 @@
       h2 {
         align-self: center;
         font-size: $size-3;
+        line-height: $size-4;
       }
       &:hover,
       &:active {
@@ -154,6 +167,7 @@
     &__title {
       color: $clr-0;
       font-size: $size-4;
+      line-height: $size-5;
     }
     &__subtitle {
       color: $clr-0;
@@ -170,6 +184,7 @@
       margin: auto auto 0 auto;
       h2 {
         font-size: $size-3;
+        line-height: $size-4;
       }
     }
     &__img {
@@ -182,8 +197,10 @@
     }
   }
   .projects-page__button {
+    margin: $size-4 auto 0 auto;
     h2 {
       font-size: $size-3;
+      line-height: $size-4;
     }
   }
 }
@@ -191,13 +208,17 @@
 
 @mixin desktop {
   .projects-page {
-    padding: $size-7 0;
+    padding: $size-5 0;
     &__title {
       font-size: $size-6;
+      line-height: $size-6;
       margin-bottom: $size-3;
     }
     &__subtitle {
       font-size: $size-4;
+      line-height: $size-4;
+      width: 40%;
+      margin-bottom: $size-5;
     }
   }
   #my-projects-card-0 {
@@ -224,17 +245,25 @@
     }
     &__title {
       font-size: $size-4;
+      line-height: $size-5;
     }
     &__text {
       font-size: $size-3;
-      height: 150px;
       line-height: $size-3;
+      height: 150px;
+    }
+    &__button {
+      h2 {
+        font-size: $size-3;
+        line-height: $size-4;
+      }
     }
   }
   .projects-page__button {
+    margin: $size-5 auto 0 auto;
     h2 {
       font-size: $size-3;
-      line-height: $size-5;
+      line-height: $size-4;
     }
   }
 }
@@ -245,27 +274,36 @@
 
 @include for-desktop-full-hd {
   @include desktop;
+
   .projects-page {
+    padding: $size-6 0;
     &__title {
       font-size: $size-7;
+      line-height: $size-7;
       margin-bottom: $size-4;
     }
     &__subtitle {
       font-size: $size-5;
+      line-height: $size-5;
       margin-bottom: $size-5;
+      width: 60%;
+      margin-bottom: $size-6;
     }
   }
   .my-projects-card + .my-projects-card {
     margin-left: $size-4;
   }
   .my-projects-card {
+    &__body {
+      padding: $size-5;
+    }
     &__text {
-      font-size: $size-4;
-      height: 250px;
-      line-height: $size-4;
+      font-size: $size-3;
+      height: 150px;
+      line-height: $size-3;
     }
     &__img {
-      height: 300px;
+      // height: 300px;
     }
   }
 }
