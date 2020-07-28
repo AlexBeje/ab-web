@@ -50,6 +50,7 @@
   &__item {
     margin-bottom: $size-2;
     font-size: $size-4;
+    line-height: $size-4;
     &:last-child {
       margin-bottom: 0;
     }
@@ -66,11 +67,13 @@
   &__title {
     color: $clr-0;
     font-size: $size-4;
+    line-height: $size-5;
     text-align: center;
     margin-bottom: $size-2;
   }
   &__text {
     font-size: $size-2;
+    line-height: $size-2;
     text-align: center;
     margin: 0 auto;
     width: 276px;
@@ -80,6 +83,7 @@
 .more {
   margin: $size-3 auto;
   font-size: $size-2;
+  line-height: $size-3;
   &:hover,
   &:active {
     cursor: pointer;
@@ -92,6 +96,7 @@
   &__icon {
     transition: $transition;
     font-size: $size-2;
+    line-height: $size-3;
     text-align: center;
   }
   &__text {
@@ -149,15 +154,16 @@
     filter: contrast(85%);
   }
   .nav__icon {
-    margin: $size-4;
+    margin: $size-4 $size-4 $size-2 0;
   }
   .profile {
     &__title {
       width: 228px;
-      margin: 0 auto $size-4 auto;
+      margin: 0 auto $size-2 auto;
     }
     &__text {
       font-size: $size-2;
+      line-height: $size-2;
       text-align: left;
       width: 175px;
       margin: 0 0 0 $size-2;
@@ -166,6 +172,7 @@
   .more {
     margin: auto auto $size-3 auto;
     font-size: $size-2;
+    line-height: $size-3;
   }
   .social {
     right: 42px;
@@ -184,13 +191,14 @@
     margin: $size-5;
   }
   .nav__item {
-    margin-bottom: $size-8;
-    font-size: $size-8;
+    margin-bottom: $size-6;
+    font-size: $size-6;
+    line-height: $size-6;
   }
   .profile {
     width: auto;
     padding: 0;
-    margin: 0 auto 0 15%;
+    margin: 0 auto 0 10%;
     &__text {
       font-size: $size-3;
       line-height: $size-3;
@@ -212,10 +220,12 @@
     margin: 0 auto 0 10%;
     &__title {
       font-size: $size-6;
-      margin-bottom: $size-4;
+      line-height: $size-6;
+      margin-bottom: $size-3;
     }
     &__text {
       font-size: $size-4;
+      line-height: $size-4;
       line-height: $size-4;
       width: 445px;
     }
@@ -238,12 +248,19 @@
       }
     }
   }
+  .nav__item {
+    margin-bottom: $size-8;
+    font-size: $size-7;
+    line-height: $size-7;
+  }
   .more {
     h2 {
       font-size: $size-3;
+      line-height: $size-4;
     }
     &__icon {
       font-size: $size-3;
+      line-height: $size-4;
     }
   }
   .social {
@@ -284,14 +301,20 @@
 
 @include for-desktop-full-hd {
   @include desktop;
+  .nav__item {
+    font-size: $size-8;
+    line-height: $size-8;
+  }
   .profile {
     margin: 0 auto 0 15%;
     &__title {
       font-size: $size-8;
+      line-height: $size-8;
       margin-bottom: $size-4;
     }
     &__text {
       font-size: $size-5;
+      line-height: $size-5;
       line-height: $size-5;
       width: 560px;
     }
@@ -299,9 +322,11 @@
   .more {
     h2 {
       font-size: $size-5;
+      line-height: $size-7;
     }
     &__icon {
       font-size: $size-5;
+      line-height: $size-7;
     }
   }
 }
