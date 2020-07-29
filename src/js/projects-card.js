@@ -86,11 +86,11 @@ function selectFirstCard() {
   thirdCard.className = "my-projects-card__third";
 
   setTimeout(() => {
+    cardImg.style.backgroundImage = projectsCardData.firstCard.img;
     cardTitle.innerHTML = projectsCardData.firstCard.title;
     cardSubtitle.innerHTML = projectsCardData.firstCard.subtitle;
     cardText.innerHTML = projectsCardData.firstCard.text;
-  }, 200);
-  cardImg.style.backgroundImage = projectsCardData.firstCard.img;
+  }, 300);
 }
 
 function selectSecondCard() {
@@ -99,11 +99,11 @@ function selectSecondCard() {
   thirdCard.className = "my-projects-card__third";
 
   setTimeout(() => {
+    cardImg.style.backgroundImage = projectsCardData.secondCard.img;
     cardTitle.innerHTML = projectsCardData.secondCard.title;
     cardSubtitle.innerHTML = projectsCardData.secondCard.subtitle;
     cardText.innerHTML = projectsCardData.secondCard.text;
-  }, 200);
-  cardImg.style.backgroundImage = projectsCardData.secondCard.img;
+  }, 300);
 }
 
 function selectThirdCard() {
@@ -112,11 +112,11 @@ function selectThirdCard() {
   thirdCard.className = "my-projects-card__third my-projects-card--active";
 
   setTimeout(() => {
+    cardImg.style.backgroundImage = projectsCardData.thirdCard.img;
     cardTitle.innerHTML = projectsCardData.thirdCard.title;
     cardSubtitle.innerHTML = projectsCardData.thirdCard.subtitle;
     cardText.innerHTML = projectsCardData.thirdCard.text;
-  }, 200);
-  cardImg.style.backgroundImage = projectsCardData.thirdCard.img;
+  }, 300);
 }
 
 function navigateTo() {
