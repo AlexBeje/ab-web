@@ -1,8 +1,18 @@
-const cardTitle = document.querySelector("#my-projects-card-0 .my-projects-card__title");
-const cardSubtitle = document.querySelector("#my-projects-card-0 .my-projects-card__subtitle");
-const cardText = document.querySelector("#my-projects-card-0 .my-projects-card__text");
-const cardImg = document.querySelector("#my-projects-card-0 .my-projects-card__img");
-const cardButton = document.querySelector("#my-projects-card-0 .my-projects-card__button");
+const cardTitle = document.querySelector(
+  "#my-projects-card-0 .my-projects-card__title"
+);
+const cardSubtitle = document.querySelector(
+  "#my-projects-card-0 .my-projects-card__subtitle"
+);
+const cardText = document.querySelector(
+  "#my-projects-card-0 .my-projects-card__text"
+);
+const cardImg = document.querySelector(
+  "#my-projects-card-0 .my-projects-card__img"
+);
+const cardButton = document.querySelector(
+  "#my-projects-card-0 .my-projects-card__button"
+);
 
 const firstCard = document.querySelector(".my-projects-card__first");
 const secondCard = document.querySelector(".my-projects-card__second");
@@ -64,18 +74,23 @@ cards.map((card, index) => {
   data[`cardButton${index}`] = document.querySelector(
     `#my-projects-card-${index} .my-projects-card__button`
   );
-  data[`cardButton${index}`].setAttribute("href", projectsCardData[card].button);
-})
+  data[`cardButton${index}`].setAttribute(
+    "href",
+    projectsCardData[card].button
+  );
+});
 
 function selectFirstCard() {
   firstCard.className = "my-projects-card__first my-projects-card--active";
   secondCard.className = "my-projects-card__second";
   thirdCard.className = "my-projects-card__third";
 
-  cardTitle.innerHTML = projectsCardData.firstCard.title;
-  cardSubtitle.innerHTML = projectsCardData.firstCard.subtitle;
-  cardText.innerHTML = projectsCardData.firstCard.text;
-  cardImg.style.backgroundImage = projectsCardData.firstCard.img;
+  setTimeout(() => {
+    cardTitle.innerHTML = projectsCardData.firstCard.title;
+    cardSubtitle.innerHTML = projectsCardData.firstCard.subtitle;
+    cardText.innerHTML = projectsCardData.firstCard.text;
+    cardImg.style.backgroundImage = projectsCardData.firstCard.img;
+  }, 200);
 }
 
 function selectSecondCard() {
@@ -83,10 +98,12 @@ function selectSecondCard() {
   secondCard.className = "my-projects-card__second my-projects-card--active";
   thirdCard.className = "my-projects-card__third";
 
-  cardTitle.innerHTML = projectsCardData.secondCard.title;
-  cardSubtitle.innerHTML = projectsCardData.secondCard.subtitle;
-  cardText.innerHTML = projectsCardData.secondCard.text;
-  cardImg.style.backgroundImage = projectsCardData.secondCard.img;
+  setTimeout(() => {
+    cardTitle.innerHTML = projectsCardData.secondCard.title;
+    cardSubtitle.innerHTML = projectsCardData.secondCard.subtitle;
+    cardText.innerHTML = projectsCardData.secondCard.text;
+    cardImg.style.backgroundImage = projectsCardData.secondCard.img;
+  }, 200);
 }
 
 function selectThirdCard() {
@@ -94,18 +111,26 @@ function selectThirdCard() {
   secondCard.className = "my-projects-card__second";
   thirdCard.className = "my-projects-card__third my-projects-card--active";
 
-  cardTitle.innerHTML = projectsCardData.thirdCard.title;
-  cardSubtitle.innerHTML = projectsCardData.thirdCard.subtitle;
-  cardText.innerHTML = projectsCardData.thirdCard.text;
-  cardImg.style.backgroundImage = projectsCardData.thirdCard.img;
+  setTimeout(() => {
+    cardTitle.innerHTML = projectsCardData.thirdCard.title;
+    cardSubtitle.innerHTML = projectsCardData.thirdCard.subtitle;
+    cardText.innerHTML = projectsCardData.thirdCard.text;
+    cardImg.style.backgroundImage = projectsCardData.thirdCard.img;
+  }, 200);
 }
 
 function navigateTo() {
-  if (firstCard.className === "my-projects-card__first my-projects-card--active") {
+  if (
+    firstCard.className === "my-projects-card__first my-projects-card--active"
+  ) {
     cardButton.setAttribute("href", projectsCardData.firstCard.button);
-  } else if (secondCard.className === "my-projects-card__second my-projects-card--active") {
+  } else if (
+    secondCard.className === "my-projects-card__second my-projects-card--active"
+  ) {
     cardButton.setAttribute("href", projectsCardData.secondCard.button);
-  } else if (thirdCard.className === "my-projects-card__third my-projects-card--active") {
+  } else if (
+    thirdCard.className === "my-projects-card__third my-projects-card--active"
+  ) {
     cardButton.setAttribute("href", projectsCardData.thirdCard.button);
   }
 }
