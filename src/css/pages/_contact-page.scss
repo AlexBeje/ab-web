@@ -35,6 +35,10 @@
   }
   &__button {
     @include my-button;
+    h2 {
+      font-size: $size-2;
+      line-height: $size-4;
+    }
     &:hover,
     &:active {
       background: $white;
