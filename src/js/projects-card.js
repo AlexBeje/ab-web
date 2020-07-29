@@ -89,8 +89,8 @@ function selectFirstCard() {
     cardTitle.innerHTML = projectsCardData.firstCard.title;
     cardSubtitle.innerHTML = projectsCardData.firstCard.subtitle;
     cardText.innerHTML = projectsCardData.firstCard.text;
-    cardImg.style.backgroundImage = projectsCardData.firstCard.img;
-  }, 400);
+  }, 200);
+  cardImg.style.backgroundImage = projectsCardData.firstCard.img;
 }
 
 function selectSecondCard() {
@@ -102,8 +102,8 @@ function selectSecondCard() {
     cardTitle.innerHTML = projectsCardData.secondCard.title;
     cardSubtitle.innerHTML = projectsCardData.secondCard.subtitle;
     cardText.innerHTML = projectsCardData.secondCard.text;
-    cardImg.style.backgroundImage = projectsCardData.secondCard.img;
-  }, 400);
+  }, 200);
+  cardImg.style.backgroundImage = projectsCardData.secondCard.img;
 }
 
 function selectThirdCard() {
@@ -115,8 +115,8 @@ function selectThirdCard() {
     cardTitle.innerHTML = projectsCardData.thirdCard.title;
     cardSubtitle.innerHTML = projectsCardData.thirdCard.subtitle;
     cardText.innerHTML = projectsCardData.thirdCard.text;
-    cardImg.style.backgroundImage = projectsCardData.thirdCard.img;
-  }, 400);
+  }, 200);
+  cardImg.style.backgroundImage = projectsCardData.thirdCard.img;
 }
 
 function navigateTo() {
