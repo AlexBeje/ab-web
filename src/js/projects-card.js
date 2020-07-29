@@ -90,7 +90,7 @@ function selectFirstCard() {
     cardTitle.innerHTML = projectsCardData.firstCard.title;
     cardSubtitle.innerHTML = projectsCardData.firstCard.subtitle;
     cardText.innerHTML = projectsCardData.firstCard.text;
-  }, 300);
+  }, 200);
 }
 
 function selectSecondCard() {
@@ -103,7 +103,7 @@ function selectSecondCard() {
     cardTitle.innerHTML = projectsCardData.secondCard.title;
     cardSubtitle.innerHTML = projectsCardData.secondCard.subtitle;
     cardText.innerHTML = projectsCardData.secondCard.text;
-  }, 300);
+  }, 200);
 }
 
 function selectThirdCard() {
@@ -116,7 +116,7 @@ function selectThirdCard() {
     cardTitle.innerHTML = projectsCardData.thirdCard.title;
     cardSubtitle.innerHTML = projectsCardData.thirdCard.subtitle;
     cardText.innerHTML = projectsCardData.thirdCard.text;
-  }, 300);
+  }, 200);
 }
 
 function navigateTo() {
