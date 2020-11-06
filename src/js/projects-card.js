@@ -32,7 +32,7 @@ const projectsCardData = {
       "https://www.amazon.es/clouddrive/share/mt8wf4cfJUwSjWLHE8SAFjfWXbTyERnmi5BdHoZbVOJ",
   },
   secondCard: {
-    title: "FREED0M",
+    title: "FREEDOM",
     subtitle: "Video",
     text:
       "A “freedom” themed video created in iMovie Mac program. Developed while courising UOC Video subject.",
@@ -40,7 +40,7 @@ const projectsCardData = {
     button: "https://www.youtube.com/watch?v=vMO1n7FL7ME",
   },
   thirdCard: {
-    title: "WEBP4GE",
+    title: "WEBPAGE",
     subtitle: "Template",
     text:
       "Here is the template of the Alexandru Bejenaru Portfolio, designed in Figma and developed in Visual Studio.",
