@@ -1,11 +1,11 @@
 // Mobile specific media queries (iphone / ipad sizes)
 @mixin for-iphone {
-  @media (min-width: 380px) and (max-width: 500px) and (orientation: portrait) {
+  @media (min-width: 360px) and (max-width: 500px) and (orientation: portrait) {
     @content;
   }
 }
 @mixin for-ipad {
-  @media (min-width: 750px) and (max-width: 1280px) and (orientation: landscape) {
+  @media (min-width: 800px) and (max-width: 1280px) and (orientation: landscape) {
     @content;
   }
 }
