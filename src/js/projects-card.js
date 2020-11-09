@@ -23,30 +23,28 @@ const cards = ["firstCard", "firstCard", "secondCard", "thirdCard"];
 
 const projectsCardData = {
   firstCard: {
-    title: "NEWSLETTER",
-    subtitle: "Graphic Design",
+    title: "PIANO APP",
+    subtitle: "React app",
     text:
-      "Newsletter design about family hiking. Created during the final Practice of the UOC Graphic Design subject.",
-    img: "url(/assets/second-card.png)",
-    button:
-      "https://www.amazon.es/clouddrive/share/mt8wf4cfJUwSjWLHE8SAFjfWXbTyERnmi5BdHoZbVOJ",
+      "Piano app, developed using the React framework, utilizing Typescript, Tailwind and Styled Components tools.",
+    img: "url(/assets/first-card.png)",
+    button: "https://piano.alexbejenaru.dev",
   },
   secondCard: {
-    title: "FREEDOM",
-    subtitle: "Video",
+    title: "MARKDOWN",
+    subtitle: "React app",
     text:
-      "A “freedom” themed video created in iMovie Mac program. Developed while courising UOC Video subject.",
-    img: "url(/assets/first-card.png)",
-    button: "https://www.youtube.com/watch?v=vMO1n7FL7ME",
+      "Markdown live generator which utilizes typescript and external React libraries.",
+    img: "url(/assets/second-card.png)",
+    button: "https://markdown.alexbejenaru.dev",
   },
   thirdCard: {
-    title: "WEBPAGE",
-    subtitle: "Template",
+    title: "QUOTE APP",
+    subtitle: "React app",
     text:
-      "Here is the template of the Alexandru Bejenaru Portfolio, designed in Figma and developed in Visual Studio.",
+      "Quote app developed in React, utilized external API to randomly fetch the phrase + the author of every quote.",
     img: "url(/assets/third-card.png)",
-    button:
-      "https://www.figma.com/file/2emDRlJyx6XPLFfU7v499u/AB-Web?node-id=46%3A1",
+    button: "https://quote.alexbejenaru.dev",
   },
 };
 
