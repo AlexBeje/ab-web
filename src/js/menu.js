@@ -8,7 +8,7 @@ const projectsPage = document.querySelector("#projects-page");
 const skillsPage = document.querySelector("#skills-page");
 const contactPage = document.querySelector("#contact-page");
 
-function toggleMenu() {
+function toggleMenu(e) {
   if (burgerIcon.classList.contains("d-block")) {
     closeIcon.className = "nav__icon--close d-block";
     burgerIcon.className = "nav__icon--burger d-none";
@@ -24,4 +24,23 @@ function toggleMenu() {
     skillsPage.style = "display: block;";
     contactPage.style = "display: block;";
   }
+
+  switch (e.innerHTML) {
+    case "PROJECTS":
+      goToId("#projects-page");
+      break;
+    case "SKILLS":
+      goToId("#skills-page");
+      break;
+    case "CONTACT":
+      goToId("#contact-page");
+      break;
+  }
+}
+
+function goToId(id) {
+  window.scrollTo({
+    top: document.querySelector(id).offsetTop,
+    behavior: "smooth",
+  });
 }

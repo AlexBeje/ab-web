@@ -58,8 +58,8 @@
     &:last-child {
       margin-bottom: 0;
     }
-    a:hover,
-    a:active {
+    &:hover,
+    &:active {
       color: $clr-0;
       cursor: pointer;
     }
