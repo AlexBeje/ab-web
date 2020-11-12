@@ -83,12 +83,10 @@ function selectFirstCard() {
   secondCard.className = "my-projects-card__second";
   thirdCard.className = "my-projects-card__third";
 
-  setTimeout(() => {
-    cardImg.style.backgroundImage = projectsCardData.firstCard.img;
-    cardTitle.innerHTML = projectsCardData.firstCard.title;
-    cardSubtitle.innerHTML = projectsCardData.firstCard.subtitle;
-    cardText.innerHTML = projectsCardData.firstCard.text;
-  }, 200);
+  cardImg.style.backgroundImage = projectsCardData.firstCard.img;
+  cardTitle.innerHTML = projectsCardData.firstCard.title;
+  cardSubtitle.innerHTML = projectsCardData.firstCard.subtitle;
+  cardText.innerHTML = projectsCardData.firstCard.text;
 }
 
 function selectSecondCard() {
@@ -96,12 +94,10 @@ function selectSecondCard() {
   secondCard.className = "my-projects-card__second my-projects-card--active";
   thirdCard.className = "my-projects-card__third";
 
-  setTimeout(() => {
-    cardImg.style.backgroundImage = projectsCardData.secondCard.img;
-    cardTitle.innerHTML = projectsCardData.secondCard.title;
-    cardSubtitle.innerHTML = projectsCardData.secondCard.subtitle;
-    cardText.innerHTML = projectsCardData.secondCard.text;
-  }, 200);
+  cardImg.style.backgroundImage = projectsCardData.secondCard.img;
+  cardTitle.innerHTML = projectsCardData.secondCard.title;
+  cardSubtitle.innerHTML = projectsCardData.secondCard.subtitle;
+  cardText.innerHTML = projectsCardData.secondCard.text;
 }
 
 function selectThirdCard() {
@@ -109,12 +105,10 @@ function selectThirdCard() {
   secondCard.className = "my-projects-card__second";
   thirdCard.className = "my-projects-card__third my-projects-card--active";
 
-  setTimeout(() => {
-    cardImg.style.backgroundImage = projectsCardData.thirdCard.img;
-    cardTitle.innerHTML = projectsCardData.thirdCard.title;
-    cardSubtitle.innerHTML = projectsCardData.thirdCard.subtitle;
-    cardText.innerHTML = projectsCardData.thirdCard.text;
-  }, 200);
+  cardImg.style.backgroundImage = projectsCardData.thirdCard.img;
+  cardTitle.innerHTML = projectsCardData.thirdCard.title;
+  cardSubtitle.innerHTML = projectsCardData.thirdCard.subtitle;
+  cardText.innerHTML = projectsCardData.thirdCard.text;
 }
 
 function navigateTo() {
