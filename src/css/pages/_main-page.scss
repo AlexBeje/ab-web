@@ -16,22 +16,26 @@
     margin: $size-3;
     z-index: 200;
     &--burger {
-      background-image: url(/assets/menu-s.svg);
+      mask-image: url(/assets/menu-s.svg);
+      -webkit-mask-image: url(/assets/menu-s.svg);
+      background-color: white;
       width: $size-4;
       height: $size-4;
       transition: $transition;
       &:hover {
-        background-image: url(/assets/menu-s-hover.svg);
+        background-color: $clr-0;
       }
     }
     &--close {
       display: none;
-      background-image: url(/assets/close-s.svg);
+      mask-image: url(/assets/close-s.svg);
+      -webkit-mask-image: url(/assets/close-s.svg);
+      background-color: white;
       width: $size-4;
       height: $size-4;
       transition: $transition;
       &:hover {
-        background-image: url(/assets/close-s-hover.svg);
+        background-color: $clr-0;
       }
     }
   }
@@ -110,34 +114,40 @@
   bottom: $size-3;
   &--codepen {
     cursor: pointer;
-    background-image: url(/assets/codepen-s.svg);
+    mask-image: url(/assets/codepen-s.svg);
+    -webkit-mask-image: url(/assets/codepen-s.svg);
+    background-color: white;
     width: $size-3;
     height: $size-3;
     transition: $transition;
     &:hover {
-      background-image: url(/assets/codepen-s-hover.svg);
+      background-color: $clr-0;
     }
   }
   &--github {
     margin-top: $size-2;
     cursor: pointer;
-    background-image: url(/assets/github-s.svg);
+    mask-image: url(/assets/github-s.svg);
+    -webkit-mask-image: url(/assets/github-s.svg);
+    background-color: white;
     width: $size-3;
     height: $size-3;
     transition: $transition;
     &:hover {
-      background-image: url(/assets/github-s-hover.svg);
+      background-color: $clr-0;
     }
   }
   &--linkedin {
     margin-top: $size-2;
     cursor: pointer;
-    background-image: url(/assets/linkedin-s.svg);
+    mask-image: url(/assets/linkedin-s.svg);
+    -webkit-mask-image: url(/assets/linkedin-s.svg);
+    background-color: white;
     width: $size-3;
     height: $size-3;
     transition: $transition;
     &:hover {
-      background-image: url(/assets/linkedin-s-hover.svg);
+      background-color: $clr-0;
     }
   }
 }
@@ -232,19 +242,23 @@
   }
   .nav__icon {
     &--burger {
-      background-image: url(/assets/menu-m.svg);
+      mask-image: url(/assets/menu-m.svg);
+      -webkit-mask-image: url(/assets/menu-m.svg);
+      background-color: white;
       width: $size-8;
       height: $size-8;
       &:hover {
-        background-image: url(/assets/menu-m-hover.svg);
+        background-color: $clr-0;
       }
     }
     &--close {
-      background-image: url(/assets/close-m.svg);
+      mask-image: url(/assets/close-m.svg);
+      -webkit-mask-image: url(/assets/close-m.svg);
+      background-color: white;
       width: $size-8;
       height: $size-8;
       &:hover {
-        background-image: url(/assets/close-m-hover.svg);
+        background-color: $clr-0;
       }
     }
   }
@@ -267,29 +281,35 @@
     right: 56px;
     bottom: $size-4;
     &--codepen {
-      background-image: url(/assets/codepen-m.svg);
+      mask-image: url(/assets/codepen-m.svg);
+      -webkit-mask-image: url(/assets/codepen-m.svg);
+      background-color: white;
       width: $size-6;
       height: $size-6;
       &:hover {
-        background-image: url(/assets/codepen-m-hover.svg);
+        background-color: $clr-0;
       }
     }
     &--github {
       margin-top: $size-3;
-      background-image: url(/assets/github-m.svg);
+      mask-image: url(/assets/github-m.svg);
+      -webkit-mask-image: url(/assets/github-m.svg);
+      background-color: white;
       width: $size-6;
       height: $size-6;
       &:hover {
-        background-image: url(/assets/github-m-hover.svg);
+        background-color: $clr-0;
       }
     }
     &--linkedin {
       margin-top: $size-3;
-      background-image: url(/assets/linkedin-m.svg);
+      mask-image: url(/assets/linkedin-m.svg);
+      -webkit-mask-image: url(/assets/linkedin-m.svg);
+      background-color: white;
       width: $size-6;
       height: $size-6;
       &:hover {
-        background-image: url(/assets/linkedin-m-hover.svg);
+        background-color: $clr-0;
       }
     }
   }
