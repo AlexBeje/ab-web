@@ -5,7 +5,7 @@ export default {
   input: "src/js/main.js",
   output: {
     file: "src/build/js/main.min.js",
-    format: "esm",
+    format: "cjs",
   },
   plugins: [
     dev({
