@@ -26,25 +26,25 @@ const projectsCardData = {
     title: "PIANO APP",
     subtitle: "React app",
     text:
-      "Piano app, developed using the React framework, utilizing Typescript, Tailwind and Styled Components tools.",
+      "Piano app, developed in Facebook's React framework, utilizing Typescript, Tailwind and Styled Components.",
     img: "url(/assets/first-card.png)",
     button: "https://piano.alexbejenaru.dev",
   },
   secondCard: {
-    title: "MARKDOWN",
+    title: "POMODORO",
     subtitle: "React app",
     text:
-      "Markdown live generator which utilizes typescript and external React libraries.",
+      "Pomodoro was build in React.js framework using Typescript. After appling the funcionality, it was structured using Tailwind (CSS framework).",
     img: "url(/assets/second-card.png)",
-    button: "https://markdown.alexbejenaru.dev",
+    button: "https://pomodoro.alexbejenaru.dev",
   },
   thirdCard: {
-    title: "QUOTE APP",
+    title: "CALCULATOR",
     subtitle: "React app",
     text:
-      "Quote app developed in React, utilized external API to randomly fetch the phrase + the author of every quote.",
+      "Calculator app developed in React, making use of Typescript and Styled Components library.",
     img: "url(/assets/third-card.png)",
-    button: "https://quote.alexbejenaru.dev",
+    button: "https://calculator.alexbejenaru.dev",
   },
 };
 
