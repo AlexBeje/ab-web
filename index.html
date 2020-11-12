@@ -14,6 +14,7 @@
       rel="stylesheet"
     />
     <!-- Global site tag (gtag.js) - Google Analytics -->
+    <script defer src="https://unpkg.com/smoothscroll-polyfill@0.4.4/dist/smoothscroll.min.js"></script>
     <script async src="https://www.googletagmanager.com/gtag/js?id=G-CE9HRW3RW2"></script>
     <script>
       window.dataLayer = window.dataLayer || [];
@@ -31,19 +32,19 @@
       <div class="row main-page-bg">
         <div class="col main-page">
           <nav class="nav d-flex justify-content-end">
-            <div class="nav__icon" onclick="toggleMenu()">
+            <div class="nav__icon" onclick="toggleMenu(this)">
               <div class="nav__icon--burger d-block"></div>
               <div class="nav__icon--close"></div>
             </div>
             <div class="nav__items">
               <h1 class="nav__item">
-                <a href="#projects-page" onclick="toggleMenu()">PROJECTS</a>
+                <a onclick="toggleMenu(this)">PROJECTS</a>
               </h1>
               <h1 class="nav__item">
-                <a href="#skills-page" onclick="toggleMenu()">SKILLS</a>
+                <a onclick="toggleMenu(this)">SKILLS</a>
               </h1>
               <h1 class="nav__item">
-                <a href="#contact-page" onclick="toggleMenu()">CONTACT</a>
+                <a onclick="toggleMenu(this)">CONTACT</a>
               </h1>
             </div>
           </nav>
@@ -53,12 +54,12 @@
               Hello! My name is Alex. I am a designer and a web developer.
             </p>
           </div>
-          <div class="more">
-            <h2 class="more__text">
-              <a href="#projects-page">PROJECTS</a>
+          <div class="more" onclick="goToId('#projects-page')">
+            <h2 class="more__text"> 
+              <a>PROJECTS</a>
             </h2>
             <div class="more__icon">
-              <a href="#projects-page">⌄</a>
+              <a>⌄</a>
             </div>
           </div>
           <div class="social">
